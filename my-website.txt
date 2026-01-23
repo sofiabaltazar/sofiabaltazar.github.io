@@ -1,0 +1,48 @@
+my-website/
+│
+├─ index.html                # Home page
+├─ about_me.html
+├─ projects.html
+├─ contact.html
+├─ get-service.html
+├─ freelancer-form.html
+├─ book-a-cakk-form.html 
+├─ freebies.html
+├─ privacy.html
+├─ legal.html
+├─ terms.html
+│
+├─ css/
+│   ├─ main.css             # Main CSS for the whole site
+│   ├─ socialbar.css
+│   ├─ service.css
+│   ├─ contact.css
+│   └─  case-study.css
+│
+├─ assets/                   # CSS, JS, Images
+│   ├─ Case-study-image   # Images used across pages
+│   ├─ client-say
+│   ├─ my image
+│   └─ website image
+│
+├─ cta/  
+│   ├─ ads.html
+│   ├─ footer.html
+│   ├─ navbar.html
+│   ├─ socialbar.html
+│   └─ top-offer.html
+│
+├─ freebies/
+│   ├─ free-guide-form.html
+│   ├─ free-guide-thank-you.html
+│
+├─ projects/
+│   ├─ facebook-page-sales-funnel.html
+│   ├─ ghl-quickbooks-integration.html
+│   ├─ lead-to-client-pipeline-automation.html
+│   ├─ saas-crm-appointment-funnel.html
+│   ├─ signed-contract-onboarding.html
+│   └─video-editing-competition.html
+│
+├─ my-website.txt
+└─ README.md                 # Optional documentation or instructions

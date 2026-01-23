@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Baltazar | Terms & Conditions</title>
+    <meta name="description"
+        content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+    <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+    <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+    <meta property="og:description"
+        content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+    <meta property="og:image" content="assets/Profile Picture.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Custom CSS -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/socialbar.css" rel="stylesheet" />
+
+    <!-- Standard favicon for browsers -->
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <!-- Include Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Sticky CTA  -->
+    <section>
+        <div id="ads"></div>
+
+        <script>
+            fetch("./promotion/ads.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("ads").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <!-- Sticky Social Bar -->
+    <section>
+        <div id="socialbar"></div>
+
+        <script>
+            fetch("./cta/socialbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("socialbar").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar"></div>
+
+            <script>
+                fetch("./cta/navbar.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+
+        <!-- Terms & Conditions PAGE -->
+        <section class="bg-[#111] text-white py-20">
+            <div class="p-10 md:p-14">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
+                        <li class="breadcrumb-item">About</li>
+                        <li class="breadcrumb-item active text-gray-400" aria-current="page">
+                            <a href="./terms.html" class="active">Terms & Conditions</a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-3">
+                    Terms & Conditions
+                </h1>
+                <p class="text-sm text-gray-400 mb-10">
+                    Last updated: January 2026
+                </p>
+
+                <p class="mb-6 text-gray-200 leading-relaxed">
+                    Welcome to the website of <strong>Sofia Baltazar</strong>.
+                    By accessing or using this website, you agree to comply with
+                    and be bound by these Terms & Conditions.
+                    If you do not agree, please discontinue use of this site.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    1. Use of Website
+                </h2>
+                <p class="text-gray-200 mb-4">
+                    This website is intended for informational, educational, and business purposes only.
+                </p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>No unlawful, abusive, or harmful use</li>
+                    <li>No unauthorized copying, reproduction, or redistribution</li>
+                    <li>No interference with website functionality or security</li>
+                </ul>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    2. Intellectual Property
+                </h2>
+                <p class="text-gray-200">
+                    All content, branding, designs, frameworks, systems, and materials on this website
+                    are the intellectual property of <strong>Sofia Baltazar</strong>, unless otherwise stated.
+                    Unauthorized use, reproduction, or distribution is prohibited.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    3. Services & Engagements
+                </h2>
+                <p class="text-gray-200">
+                    Any services described on this website are subject to separate written agreements.
+                    Website content does not constitute a binding offer, proposal, or contract.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    4. Free Resources
+                </h2>
+                <p class="text-gray-200">
+                    Free resources are provided “as is” for educational purposes only.
+                    Redistribution, resale, or misuse is prohibited.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    5. Payments & Refunds
+                </h2>
+                <p class="text-gray-200">
+                    Payment terms and refund policies are governed by individual contracts or invoices.
+                    Unless otherwise stated in writing, payments are non-refundable once work begins.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    6. Limitation of Liability
+                </h2>
+                <p class="text-gray-200">
+                    To the fullest extent permitted by law, liability is not assumed for any indirect,
+                    incidental, or consequential damages arising from use of this website or services.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    7. Third-Party Tools & Links
+                </h2>
+                <p class="text-gray-200">
+                    This website may contain links to third-party tools or platforms.
+                    No responsibility is assumed for their content, policies, or practices.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    8. Privacy
+                </h2>
+                <p class="text-gray-200">
+                    Use of this website is also governed by the
+                    <a href="./privacy.html" class="text-yellow-400 underline hover:opacity-80">
+                        Privacy Policy
+                    </a>.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    9. Changes to Terms
+                </h2>
+                <p class="text-gray-200">
+                    These Terms & Conditions may be updated at any time.
+                    Continued use of the website constitutes acceptance of any changes.
+                </p>
+
+                <h2 class="text-xl font-semibold text-yellow-400 mt-12 mb-3">
+                    10. Contact
+                </h2>
+                <p class="text-gray-200">
+                    Questions regarding these Terms & Conditions may be sent to:<br>
+                    <strong>Sofia Baltazar</strong><br>
+                    Email: support@yourdomain.com
+                </p>
+            </div>
+        </section>
+        <!-- END OF TERMS & CONDITIONS PAGE -->
+
+        <!-- footer -->
+        <section>
+            <div id="footer"></div>
+
+            <script>
+                fetch("./cta/footer.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer").innerHTML = html;
+                    });
+            </script>
+        </section>
+    </main>
+
+    <!-- Alpine.js (REQUIRED for nav dropdowns) -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script src="https://js-na2.hsforms.net/forms/embed/244740432.js" defer></script>
+    <!-- End of HubSpot Embed Code -->
+
+
+    <script>
+        const servicesBtn = document.getElementById('services-btn');
+        const aboutBtn = document.getElementById('about-btn');
+
+        const servicesDropdown = document.getElementById('services-dropdown');
+        const aboutDropdown = document.getElementById('about-dropdown');
+
+        servicesBtn.addEventListener('click', () => {
+            if (!servicesDropdown.classList.contains('hidden')) {
+                servicesDropdown.classList.add('hidden');
+            }
+            aboutDropdown.classList.add('hidden');
+        });
+
+        aboutBtn.addEventListener('click', () => {
+            if (!aboutDropdown.classList.contains('hidden')) {
+                aboutDropdown.classList.add('hidden');
+            }
+            servicesDropdown.classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

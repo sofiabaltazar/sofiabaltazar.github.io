@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofia Baltazar | Creative Technologist & Systems Specialist</title>
+  <meta name="description"
+    content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+  <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+  <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+  <meta property="og:description"
+    content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+  <meta property="og:image" content="assets/Profile Picture.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Custom CSS -->
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/service.css" rel="stylesheet" />
+  <link href="./css/contact.css" rel="stylesheet" />
+  <link href="./css/socialbar.css" rel="stylesheet" />
+
+  <!-- Standard favicon for browsers -->
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Alpine.js -->
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <!-- Include Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Sticky CTA  -->
+  <section>
+    <div id="ads"></div>
+
+    <script>
+      fetch("./promotion/ads.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("ads").innerHTML = html;
+        });
+    </script>
+  </section>
+
+  <!-- Sticky Social Bar -->
+  <section>
+    <div id="socialbar"></div>
+
+    <script>
+      fetch("./cta/socialbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("socialbar").innerHTML = html;
+        });
+    </script>
+  </section>
+
+  <main>
+    <!-- Top Offer Bar with Image on Left, Text Center, CTA Right -->
+    <!-- <section>
+      <div id="top-offer"></div>
+
+      <script>
+        fetch("./promotion/top-offer.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("top-offer").innerHTML = html;
+          });
+      </script>
+    </section> -->
+
+    <!-- Top Navigation Bar -->
+    <section>
+      <div id="navbar"></div>
+
+      <script>
+        fetch("./cta/navbar.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+          });
+      </script>
+    </section>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class=" py-12 md:py-20 px-4">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+                Designing Thoughtful Solutions. Implementing Smart Automation. Helping Ideas Grow Sustainably.
+              </h1>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                I'm <strong>Sofia Baltazar</strong> also known as Fia - I design custom websites, funnels, and
+                automation workflows tailored to your business needs, built with a structured, repeatable framework for
+                consistent quality and efficiency.
+              </p>
+              <div class="flex gap-4 flex-wrap mb-6">
+                <a href="./book-a-call-form.html" class="cssbuttons-io-button">
+                  Book a Call
+                  <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </a>
+
+                <a href="#projects">
+                  <span class="box">
+                    Explore Projects
+                  </span>
+                </a>
+              </div>
+              <hr class="my-6 border-gray-300" style="border-color: #D4AF37;" />
+            </div>
+            <div class="flex justify-center">
+              <div class="bg-transparent">
+                <img src="./assets/my image/Profile Picture.png" class="w-full max-w-sm rounded-lg"
+                  alt="Sofia Baltazar" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section class="py-8 tools">
+      <h2 class="text-2xl font-bold text-center mb-6">
+        Tools I Use to Build Your Solutions
+      </h2>
+      <p class="text-center">I implement solutions using industry-standard tools to create websites, funnels, and
+        automation workflows:</p>
+      <br>
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text">GoHighLevel</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text">Pabbly</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text">Zapier</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text">ClickUp</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text">QuickBooks</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text"><i class="bi bi-filetype-html"></i> HTML</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text"><i class="bi bi-css"></i> CSS</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text"><i class="bi bi-wordpress"></i> WordPress</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text"><i class="bi bi-javascript"></i> JavaScript</h4>
+            </div>
+
+            <div class="swiper-slide">
+              <h4 class="carousel-text"><i class="bi bi-filetype-php"></i> PHP </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Include Swiper JS at the bottom -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,        // show multiple at once
+          spaceBetween: 230,       // close together
+          loop: true,
+          speed: 800,              // smooth but readable
+          autoplay: {
+            delay: 2500,           // enough time to read
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          },
+        });
+      </script>
+
+    </section>
+
+    <!--About-->
+    <section class="py-16 about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-6">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                    <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                      <img src="./assets/my image/Profile Picture (2).png" class="img-fluid" alt="Image" />
+                      <div class="img-overlay"></div>
+                    </div>
+                  </div>
+                  <!--end col-->
+
+                  <div class="col-12">
+                    <div class="mt-4 pt-2 text-right">
+                      <!-- From Uiverse.io by tirth_5172 -->
+                      <a href="./about_me.html"
+                        class="relative cursor-pointer py-2 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden">
+                        <span class="relative z-20">Learn More About Me</span>
+
+                        <span
+                          class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
+
+                        <span
+                          class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+                        <span
+                          class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+                        <span
+                          class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+                        <span
+                          class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+              <!--end col-->
+
+              <div class="col-lg-6 col-md-6 col-6">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                      <img src="./assets/New Projects.png" class="img-fluid" alt="Image" />
+                      <div class="img-overlay bg-dark"></div>
+                    </div>
+                  </div>
+                  <!--end col-->
+
+                  <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                    <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                      <img src="./assets/New Projects (1).png" class="img-fluid" alt="Image" />
+                      <div class="img-overlay bg-dark"></div>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+                <!--end row-->
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row-->
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 content">
+            <div class="section-title ml-lg-5">
+              <h5 class="text-custom font-weight-normal mb-3">About Me</h5>
+              <h2 class="title mb-4">
+                Helping Businesses Work Smarter with Design & Automation.
+              </h2>
+              <p class="text-white mb-0">I combine creative design, web development, and automation expertise to deliver
+                custom solutions that help businesses operate smarter.</p>
+              <br>
+              <p class="text-white mb-0">My approach is personal, structured, and client-focused, ensuring every project
+                reflects your unique brand and goals.</p>
+
+              <div class="row">
+                <div class="col-lg-6 mt-4 pt-2">
+                  <div class="media align-items-center rounded shadow p-3">
+                    <i class="fa fa-play h4 mb-0 text-custom"></i>
+                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-white">Responsive Solutions: Adaptive
+                        websites and workflows</a></h6>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 pt-2">
+                  <div class="media align-items-center rounded shadow p-3">
+                    <i class="fa fa-file-download h4 mb-0 text-custom"></i>
+                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-white">Tailored Support: Guidance and
+                        troubleshooting whenever you need it</a></h6>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 pt-2">
+                  <div class="media align-items-center rounded shadow p-3">
+                    <i class="fa fa-user h4 mb-0 text-custom"></i>
+                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-white">Clear Processes: Transparent
+                        steps from start to finish</a></h6>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 pt-2">
+                  <div class="media align-items-center rounded shadow p-3">
+                    <i class="fa fa-image h4 mb-0 text-custom"></i>
+                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-white">Expert Implementation:
+                        Streamlined, efficient systems</a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--enr row-->
+      </div>
+    </section>
+
+    <!-- Platforms / Collaboration Section -->
+    <section id="collaboration-platforms" class="py-8 bg-black">
+      <div class="container">
+        <div class="bg-[#1b1b1b] p-5 rounded shadow text-gold text-center">
+          <p class="mb-4 h5">You can also hire or collaborate with me via:</p>
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="https://www.upwork.com/freelancers/~01c5d591316f0e51ca" target="_blank"
+              class="btn btn-outline-light btn-sm">Upwork</a>
+            <a href="https://www.fiverr.com/s/VY9q2ZZ" target="_blank" class="btn btn-outline-light btn-sm">Fiverr</a>
+            <a href="https://www.onlinejobs.ph/jobseekers/info/4713802" target="_blank"
+              class="btn btn-outline-light btn-sm">OnlinePH</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / What I Offer -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Title -->
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h2>What I Offer</h2>
+              <p>
+                I help entrepreneurs and small businesses work smarter, not harder, by designing and implementing
+                <strong>custom digital solutions</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Button aligned with title -->
+          <div class="col-lg-6 text-lg-end text-start mt-3 mt-lg-0">
+            <a href="#contact" class="btn btn-warning btn-lg">
+              Work With Me
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Custom Design</h5>
+                <p>Unique layouts reflecting your brand</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Flexible Structures</h5>
+                <p>Adaptable solutions for any business model.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-comment"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Automation & Workflows</h5>
+                <p>Streamlined processes for you and your users.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-image"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Responsive Development</h5>
+                <p>Modern websites for any device.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-th"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Testing for Perfection</h5>
+                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                  websites.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-cog"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Advanced Integrations</h5>
+                <p>Tools and systems customized for your needs.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / Featured Projects with image and button -->
+    <section id="projects" class="py-16 project" x-data="{ filter: 'all' }">
+      <div class="max-w-8xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">
+          Every Project Tells a Story
+        </h2>
+        <p class="mb-12 text-gray-700 text-center">
+          From automation to web design — see how challenges turned into
+          clarity, systems, and results.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="mb-8 d-flex justify-content-center gap-2 flex-wrap">
+          <button @click="filter='all'" :class="filter==='all' ? 'btn btn-warning' : 'btn btn-outline-warning'">
+            All
+          </button>
+          <button @click="filter='automation'"
+            :class="filter==='automation' ? 'btn btn-warning' : 'btn btn-outline-warning'">
+            Automation
+          </button>
+          <button @click="filter='integration'"
+            :class="filter==='integration' ? 'btn btn-warning' : 'btn btn-outline-warning'">
+            Integration
+          </button>
+          <button @click="filter='website/funnel'"
+            :class="filter==='website/funnel' ? 'btn btn-warning' : 'btn btn-outline-warning'">
+            Website/Funnel
+          </button>
+          <button @click="filter='video'" :class="filter==='video' ? 'btn btn-warning' : 'btn btn-outline-warning'">
+            Video Editing
+          </button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <template x-for="project in [
+        { 
+          title:'Lead-to-Client Pipeline Automation', 
+          type:'automation', 
+          problem:'Manual lead handling', 
+          solution:'Automated lead capture & nurture', 
+          tools:'GoHighLevel, Email Automation', 
+          image:'./assets/case-study-image/Lead-to-Client/Lead-to-Client.png',
+          link:'./projects/lead-to-client-pipeline-automation.html'
+        },
+        { 
+          title:'Personal Brand Website: Sofia Baltazar', 
+          type:['automation','website/funnel'],
+          problem:'Manual inquiry handling',
+          solution:'Automated lead capture & follow-up',
+          tools:'HubSpot CRM, Forms, Email Automation',
+          image:'./assets/case-study-image/personal-brand-website-sofia-baltazar/personal-brand-website-sofia-baltazar.png',
+          link:'./projects/personal-brand-website-sofia-baltazar.html'
+        },
+        { 
+          title:'GHL → QuickBooks Integration', 
+          type:'integration', 
+          problem:'Manual invoicing', 
+          solution:'Automated invoicing workflow', 
+          tools:'GoHighLevel, Pabbly, QuickBooks',
+          image:'./assets/case-study-image/GHL-QB-Integration/qb.png',
+          link:'./projects/ghl-quickbooks-integration.html'
+        },
+        { 
+          title:'Signed Contract → Onboarding', 
+          type:'automation', 
+          problem:'Manual onboarding delays', 
+          solution:'Auto-launch welcome flow', 
+          tools:'GoHighLevel, Email Templates',
+          image:'./assets/case-study-image/Signed-Contract-Onboarding/Signed-Contract.png',
+          link:'./projects/signed-contract-onboarding.html'
+        },
+        { 
+          title:'SaaS CRM Appointment Funnel', 
+          type:'automation', 
+          problem:'Low appointment show-up rate', 
+          solution:'Streamlined booking & reminder system', 
+          tools:'GoHighLevel, Google Calendar, Email',
+          image:'./assets/case-study-image/saas-appointment/crm_appointment.png',
+          link:'./projects/saas-crm-appointment-funnel.html'
+        },
+        { 
+          title:'Video Editing Competition', 
+          type:'video', 
+          problem:'Storytelling + editing', 
+          solution:'Showcasing storytelling & technical editing', 
+          tools:'Premiere Pro, After Effects',
+          image:'./assets/case-study-image/Video Editing Competition/Video Editing Competition.png',
+          link:'./projects/video-editing-competition.html'
+        }
+
+      ]" :key="project.title">
+            <!-- Project Card -->
+            <div x-show="  filter === 'all' ||  (Array.isArray(project.type)    ? project.type.includes(filter)
+                : project.type === filter)"
+              class="project-card p-6 rounded-xl shadow transition flex flex-col justify-between" x-transition>
+              <!-- Project Image -->
+              <template x-if="project.image">
+                <img :src="project.image" alt="" class="mb-4 rounded-lg w-full h-48 object-cover" />
+              </template>
+
+              <div class="project-content mb-4">
+                <h3 class="font-semibold text-xl mb-2" x-text="project.title"></h3>
+                <hr class="mb-2" />
+                <br />
+                <p class="mb-1">
+                  <strong>Problem:</strong>
+                  <span x-text="project.problem"></span>
+                </p>
+                <p class="mb-1">
+                  <strong>Solution:</strong>
+                  <span x-text="project.solution"></span>
+                </p>
+                <p class="text-sm text-gray-500">
+                  <strong>Tools:</strong> <span x-text="project.tools"></span>
+                </p>
+              </div>
+
+              <!-- BUTTON INSIDE BOX -->
+              <a :href="project.link" class="btn btn-warning mt-auto px-4 py-2 inline-block text-center">
+                Learn More
+              </a>
+            </div>
+          </template>
+        </div>
+
+        <div class="mt-8 text-center">
+          <!-- View More Projects Button -->
+          <div class="mt-8 text-center">
+            <a href="./projects.html" class="btn btn-warning px-6 py-3">
+              View More Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Call To Action / FREE GUIDE CTA -->
+    <section>
+      <div id="cta-free"></div>
+
+      <script>
+        fetch("./promotion/cta-free.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("cta-free").innerHTML = html;
+          });
+      </script>
+    </section>
+
+    <!-- TESTIMONIALS short-->
+    <section id="testimonials" class="py-16 testimonials text-center">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12">What Clients Say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="testimonials-card p-6 rounded-xl shadow">
+            <p class="italic mb-4">
+              “Her design work made our business look polished and professional overnight.”
+            </p>
+            <span class="font-semibold">– Lorenzo P.</span>
+          </div>
+          <div class="testimonials-card p-6 rounded-xl shadow">
+            <p class="italic mb-4">
+              “The automation she implemented saved us hours every week!”
+            </p>
+            <span class="font-semibold">– Client B</span>
+          </div>
+          <div class="testimonials-card p-6 rounded-xl shadow">
+            <p class="italic mb-4">
+              “Creative, efficient, and always delivers above expectations.”
+            </p>
+            <span class="font-semibold">– Client C</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS & ANSWERS SECTION / FAQ -->
+    <section id="faq" class="fqa py-16 text-center">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+        <p class="mb-12 text-gray-700 text-lg">
+          Answers to common questions about my services, processes, and tools.
+        </p>
+
+        <div class="space-y-4 text-left">
+          <!-- FAQ Item 1 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              How do I get started with your services?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              You can start by contacting me through the form above, clicking “Work With Me”, or booking your Discovery
+              Call. I’ll respond to discuss your needs and how I can help streamline your workflows
+              and projects.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              What tools do you use for automation and web development?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              I work with tools like GoHighLevel, Pabbly, Zapier for
+              automation, ClickUp, Trello, Notion for project management, and
+              modern web development tools like HTML, CSS, JavaScript, and
+              WordPress.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              Can you help with both design and technical implementation?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              Absolutely! I combine creative design with automation and system
+              implementation to deliver complete solutions that are both
+              visually appealing and operationally efficient.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              How long does a typical project take?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              Project timelines vary depending on the scope, but most custom websites, funnels, and automation setups
+              are completed within 2–6 weeks. I’ll provide a detailed schedule during our initial consultation.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              Are your systems and automations shared with other clients?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              No. Every project is custom-built and fully owned by the client. No systems, automations, or workflows are
+              resold or replicated across different businesses.
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+            <button @click="open = !open" class="w-full flex justify-between items-center font-semibold text-lg">
+              Do you offer ongoing support after the project is completed?
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+            <div x-show="open" x-transition class="mt-4 text-gray-700">
+              Yes! I provide support and guidance to ensure your systems continue running smoothly and efficiently after
+              launch.
+            </div>
+          </div>
+
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM / Final CTA Section -->
+    <section id="contact" class="contact py-16">
+      <div class="container">
+        <div class="contact__wrapper shadow-lg rounded-lg overflow-hidden">
+          <div class="row g-0">
+
+            <!-- Left Column: Contact Info -->
+            <div
+              class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 d-flex flex-column justify-content-center order-lg-1">
+              <h3 class="text-white mb-4">Let’s Build Something Unique</h3>
+              <ul class="contact-info__list list-unstyled">
+                <li class="mb-3 ps-4 position-relative">Whether it’s a custom website, funnel, or automation workflow,
+                  I create solutions that are fully tailored to your business.
+                </li>
+                <li class="mb-3 ps-4 position-relative">All projects are client-specific and owned entirely by you — no
+                  shared systems, no resold automation.
+                </li>
+                <li class="mb-3 ps-4 position-relative">
+                </li>
+              </ul>
+
+              <!-- Platforms Section -->
+              <div class="mt-3 text-white">
+                <p class="mb-2">You can also hire or collaborate with me via:</p>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <a href="https://www.upwork.com/freelancers/~01c5d591316f0e51ca" target="_blank"
+                    class="btn btn-outline-light btn-sm">Upwork</a>
+                  <a href="https://www.fiverr.com/s/VY9q2ZZ" target="_blank"
+                    class="btn btn-outline-light btn-sm">Fiverr</a>
+                  <a href="https://www.onlinejobs.ph/jobseekers/info/4713802" target="_blank"
+                    class="btn btn-outline-light btn-sm">OnlinePH</a>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="contact-social mt-4">
+                <h6 class="text-white mb-3">Follow Me</h6>
+                <div class="d-flex gap-3">
+                  <a href="https://www.facebook.com/sofiabaltazar.working" aria-label="Facebook"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.tiktok.com/@sofiabaltazar.working" aria-label="TikTok"><i
+                      class="bi bi-tiktok"></i></a>
+                  <a href="https://www.instagram.com/sofiabaltazar.working" aria-label="Instagram"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://github.com/sofiabaltazar" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sofia-baltazar-working/" aria-label="LinkedIn"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="col-lg-7 contact-form__wrapper p-5 order-lg-2 d-flex justify-content-center">
+              <div class="hs-form-frame" data-region="na2" data-form-id="6e5e36fd-285e-44af-969b-267b5b4ebee1"
+                data-portal-id="244916206"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+      <div id="footer"></div>
+
+      <script>
+        fetch("./cta/footer.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("footer").innerHTML = html;
+          });
+      </script>
+    </section>
+
+  </main>
+
+  <!-- Flowbite -->
+  <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+  <!-- Start of HubSpot Embed Code -->
+  <script src="https://js-na2.hsforms.net/forms/embed/244916206.js" defer>
+  </script>
+  <!-- End of HubSpot Embed Code -->
+
+  <!-- Main Js -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
