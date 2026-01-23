@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Baltazar | About Me</title>
+    <meta name="description"
+        content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+    <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+    <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+    <meta property="og:description"
+        content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+    <meta property="og:image" content="assets/Profile Picture.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Custom CSS -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/service.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/socialbar.css" rel="stylesheet" />
+    <link href="./css/why-fia.css" rel="stylesheet" />
+
+    <!-- Standard favicon for browsers -->
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind & Bootstrap -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-black text-white-900 font-sans">
+
+    <!-- Sticky CTA  -->
+    <section>
+        <div id="ads"></div>
+
+        <script>
+            fetch("./promotion/ads.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("ads").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <!-- Sticky Social Bar -->
+    <section>
+        <div id="socialbar"></div>
+
+        <script>
+            fetch("./cta/socialbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("socialbar").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar"></div>
+
+            <script>
+                fetch("./cta/navbar.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- HERO SECTION -->
+        <section class="hero d-flex align-items-center text-white"
+            style="height:60vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/website image/background-about-me.png') center/cover no-repeat;">
+            <div class="container text-center">
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="./index.html" class="text-gold hover:text-yellow-400 transition">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active text-warning" aria-current="page">About Me</li>
+                    </ol>
+                </nav>
+
+                <!-- Hero Title & Subtitle -->
+                <h1 class="display-4 fw-bold mb-3">About Me</h1>
+                <p class="lead mb-0">Sofia Baltazar | Creative Technologist & Systems Specialist</p>
+
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section class="py-16 about text-white">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Images -->
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-md-0">
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                    <img src="./assets/my image/Profile Picture (2).png" class="img-fluid"
+                                        alt="Sofia Baltazar Profile" />
+                                    <div class="img-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                            <img src="./assets/New Projects (2).png" class="img-fluid"
+                                                alt="Project Image" />
+                                            <div class="img-overlay bg-dark"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                            <img src="./assets/New Projects (1).png" class="img-fluid"
+                                                alt="Project Image" />
+                                            <div class="img-overlay bg-dark"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Images -->
+
+                    <!-- About Text -->
+                    <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                        <div class="ml-lg-5">
+                            <div class="section-title">
+                                <h5 class="text-custom font-weight-normal mb-3">About Me</h5>
+                                <h2 class="text-6xl font-bold mb-4">Helping Businesses Work Smarter with Design,
+                                    Automation, and Systems</h2>
+                            </div>
+                            <p class="mb-3">
+                                Hi, <strong>I’m Sofia Baltazar</strong>, a Creative Technologist and Systems
+                                Specialist. My passion is helping entrepreneurs and
+                                small businesses <strong>simplify operations, streamline workflows, and implement
+                                    systems that enable growth.</strong>
+                            </p>
+                            <p class="mb-3">
+                                With expertise in <strong>automation, web design, branding, and business
+                                    systems</strong>, I focus on
+                                fixing the little details that make a <strong>big difference</strong>. My goal is to
+                                empower businesses
+                                to <strong>scale efficiently and confidently while keeping operations smooth and
+                                    structured.</strong>
+                            </p>
+                            <p class="mb-3">
+                                Every business has “little things” that, if overlooked, can become major bottlenecks. I
+                                specialize in identifying these early and creating tailored solutions that keep your
+                                business running at its best.
+                            </p>
+                            <a href="./book-a-call-form.html" class="btn btn-warning btn-lg mt-4">Book Your Call With
+                                Me</a>
+
+                            <!-- Key Achievements -->
+                            <div class="row g-4 mt-4">
+                                <div class="col-md-4">
+                                    <div class="p-4 bg-[#1b1b1b] rounded shadow text-center">
+                                        <h2 class="text-gold fw-bold count" data-target="50">0</h2>
+                                        <p>Completed Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-4 bg-[#1b1b1b] rounded shadow text-center">
+                                        <h2 class="text-gold fw-bold count" data-target="30">0</h2>
+                                        <p>Satisfied Clients</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-4 bg-[#1b1b1b] rounded shadow text-center">
+                                        <h2 class="text-gold fw-bold count" data-target="10">0</h2>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Key Achievements -->
+
+                        </div>
+                    </div>
+                    <!-- End About Text -->
+
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Container -->
+
+            <script>
+                // Count Up Animation
+                const counters = document.querySelectorAll('.count');
+
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+
+                        // Speed of counting
+                        const speed = 50; // smaller number = faster
+                        const increment = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+
+                    // Trigger animation when in viewport
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                updateCount();
+                                observer.unobserve(counter); // run only once
+                            }
+                        });
+                    }, { threshold: 0.5 });
+
+                    observer.observe(counter);
+                });
+            </script>
+        </section>
+
+        <!-- Why choose Sofia Baltazar SECTION -->
+        <section class="py-16 divider my-0">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-white text-6xl font-bold mb-4">Why choose <strong class="text-warning">Sofia
+                            Baltazar</strong>
+                    </h2>
+                    <h5 class="text-white">Here’s why clients trust me to streamline systems, design web experiences,
+                        and bring automation to life</h5>
+                </div>
+                <div class="row align-items-center text-white">
+                    <!-- Left Column -->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="pr-lg-3">
+                            <div class="text-lg-right mb-4">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/1.png" alt="Automation"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">Automation</h4>
+                                <p class="mb-0">From lead capture to invoicing, I create automations that work with your
+                                    workflow, not against it. Less busywork, more productivity.</p>
+                            </div>
+                            <div class="text-lg-right mb-4">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/6.png" alt="Visual Design"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">Visual Design</h4>
+                                <p class="mb-0">Whether it’s branding, quick websites, or email templates, I craft
+                                    visuals that communicate your message clearly and beautifully.</p>
+                            </div>
+                            <div class="text-lg-right">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/2.png" alt="Web Design"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">Web Design</h4>
+                                <p class="mb-0">From landing pages to full-scale business websites, I design responsive
+                                    web experiences that look great and perform even better.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center Image -->
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                        <div class="why-choose-center-image text-center">
+                            <img src="./assets/my image/Profile Picture (1).png" alt="Sofia Baltazar"
+                                class=" sub-image-fia">
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="pl-lg-3">
+                            <div class="text-lg-left mb-4">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/5.png" alt="Funnel Design"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">Funnel Design</h4>
+                                <p class="mb-0">I design sales and lead funnels that guide your audience seamlessly from
+                                    first touch to loyal customer, optimized for conversions at every step.</p>
+                            </div>
+                            <div class="text-lg-left mb-4">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/4.png" alt="QA & Workflow"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">QA & Workflow</h4>
+                                <p class="mb-0">Every system is tested, documented, and optimized so you are not just
+                                    set up, you are set up to succeed.</p>
+                            </div>
+                            <div class="text-lg-left">
+                                <div class="mb-3">
+                                    <img src="./assets/why fia/3.png" alt="Support"
+                                        class="rounded-circle sub-image-sofia">
+                                </div>
+                                <h4 class="sub-info-sofia">Support</h4>
+                                <p class="mb-0">I don’t disappear after launch. I teach, refine, and provide support so
+                                    your systems keep running smoothly long-term.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Why choose Sofia Baltazar SECTION -->
+
+        <!-- SERVICES / What I Offer -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Title -->
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h2>What I Offer</h2>
+                            <p>
+                                I help entrepreneurs and small businesses <strong>work smarter, not harder</strong>, by
+                                designing and
+                                implementing
+                                <strong>custom digital solutions</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Button aligned with title -->
+                    <div class="col-lg-6 text-lg-end text-start mt-3 mt-lg-0">
+                        <a href="./contact.html" class="btn btn-warning btn-lg">
+                            Work With Me
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Custom Design</h5>
+                                <p>Unique layouts reflecting your brand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Flexible Structures</h5>
+                                <p>Adaptable solutions for any business model.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Automation & Workflows</h5>
+                                <p>Streamlined processes for you and your users.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-image"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Responsive Development</h5>
+                                <p>Modern websites for any device.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-th"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Testing for Perfection</h5>
+                                <p>I design and develop services for customers of all sizes, specializing in creating
+                                    stylish, modern
+                                    websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="icon">
+                                <i class="fa fa-cog"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Advanced Integrations</h5>
+                                <p>Tools and systems customized for your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR Framework -->
+        <section class="py-16 bg-[#111] text-white">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Text Content -->
+                    <div class="col-lg-6 mb-6 mb-lg-0" data-aos="fade-right">
+                        <h5 class="text-gold mb-3">Our Framework</h5>
+                        <h2 class="text-3xl font-bold mb-4">Structured Systems for Consistent Results</h2>
+                        <p class="mb-3 text-gray-300">
+                            Every project I take on is built on a personal operating system designed for efficiency,
+                            clarity, and consistency.
+                        </p>
+                        <p class="mb-3 text-gray-300">
+                            My framework ensures that your website, funnel, or automation workflow is fully tailored to
+                            your business, easy to manage, and scalable for future growth.
+                        </p>
+                        <p class="text-gray-300">
+                            Tools and processes are customized for each client — nothing is shared or resold — so your
+                            business has a unique, operationally efficient solution every time.
+                        </p>
+                        <br>
+                        <!--<a href="./framework.html" class="btn btn-warning btn-lg mt-4">Learn More About My
+                            Framework</a>-->
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="card border-0 shadow-lg overflow-hidden rounded">
+                            <img src="./assets/New Projects (4).png" class="img-fluid" alt="Our Story Image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action / FREE GUIDE CTA -->
+        <section>
+            <div id="cta-free"></div>
+
+            <script>
+                fetch("./promotion/cta-free.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("cta-free").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- footer -->
+        <section>
+            <div id="footer"></div>
+
+            <script>
+                fetch("./cta/footer.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Include AOS animation library at bottom of body -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

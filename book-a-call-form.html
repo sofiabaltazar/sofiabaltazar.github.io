@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Baltazar | Book Discovery Call - Form</title>
+    <meta name="description"
+        content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+    <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+    <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+    <meta property="og:description"
+        content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+    <meta property="og:image" content="assets/Profile Picture.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Custom CSS -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/socialbar.css" rel="stylesheet" />
+
+    <!-- Standard favicon for browsers -->
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <!-- Include Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Sticky CTA  -->
+    <section>
+        <div id="ads"></div>
+
+        <script>
+            fetch("./promotion/ads.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("ads").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <!-- Sticky Social Bar -->
+    <section>
+        <div id="socialbar"></div>
+
+        <script>
+            fetch("./cta/socialbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("socialbar").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar"></div>
+
+            <script>
+                fetch("./cta/navbar.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar").innerHTML = html;
+                    });
+            </script>
+        </section>
+        <!-- END OF NAVBAR -->
+
+        <!-- DISCOVERY CALL FORM / Final CTA Section -->
+        <section id="contact" class="contact py-16">
+            <div class="container">
+                <div class="contact__wrapper shadow-lg rounded-lg overflow-hidden">
+                    <div class="row g-0">
+
+                        <!-- Left Column: Contact Info -->
+                        <div
+                            class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 d-flex flex-column justify-content-center order-lg-1">
+
+                            <h3 class="text-white mb-4">
+                                What to Expect in Your Discovery Call
+                            </h3>
+
+                            <ul class="contact-info__list list-unstyled text-white-50">
+                                <li class="mb-3 ps-4 position-relative">
+                                    <strong class="text-white">1. Quick Business Overview</strong><br>
+                                    We’ll talk through your business, current challenges, and what’s slowing down your
+                                    workflows or growth.
+                                </li>
+
+                                <li class="mb-3 ps-4 position-relative">
+                                    <strong class="text-white">2. Systems & Automation Insights</strong><br>
+                                    I’ll identify where better systems, automation, or design can improve efficiency and
+                                    save you time.
+                                </li>
+
+                                <li class="mb-3 ps-4 position-relative">
+                                    <strong class="text-white">3. Clear Next Steps</strong><br>
+                                    You’ll leave with actionable recommendations and a clear direction—no pressure, just
+                                    clarity.
+                                </li>
+                            </ul>
+
+                            <!-- Social Media -->
+                            <div class="contact-social mt-4">
+                                <h6 class="text-white mb-2">Follow Me</h6>
+                                <p class="text-white-50 mb-3">
+                                    Stay connected for insights on automation, systems, and smarter business growth.
+                                </p>
+                                <div class="d-flex gap-3">
+                                    <a href="https://www.facebook.com/sofiabaltazar.working" aria-label="Facebook"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://www.tiktok.com/@sofiabaltazar.working" aria-label="TikTok"><i
+                                            class="bi bi-tiktok"></i></a>
+                                    <a href="https://www.instagram.com/sofiabaltazar.working" aria-label="Instagram"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://github.com/sofiabaltazar" aria-label="GitHub"><i
+                                            class="bi bi-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/sofia-baltazar-working/"
+                                        aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Right Column: Form -->
+                        <div class="col-lg-7 contact-form__wrapper p-5 order-lg-2 d-flex justify-content-center">
+                            <div class="hs-form-frame" data-region="na2"
+                                data-form-id="2d279548-554f-41d2-a267-0c6ad1673114" data-portal-id="244916206"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS short-->
+        <section id="testimonials" class="py-16 testimonials text-center">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12">What Clients Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="testimonials-card p-6 rounded-xl shadow">
+                        <p class="italic mb-4">
+                            “Her design work made our business look polished and professional overnight.”
+                        </p>
+                        <span class="font-semibold">– Lorenzo P.</span>
+                    </div>
+                    <div class="testimonials-card p-6 rounded-xl shadow">
+                        <p class="italic mb-4">
+                            “The automation she implemented saved us hours every week!”
+                        </p>
+                        <span class="font-semibold">– Client B</span>
+                    </div>
+                    <div class="testimonials-card p-6 rounded-xl shadow">
+                        <p class="italic mb-4">
+                            “Creative, efficient, and always delivers above expectations.”
+                        </p>
+                        <span class="font-semibold">– Client C</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTIONS & ANSWERS SECTION / FAQ -->
+        <section id="faq" class="fqa py-16 text-center">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="mb-12 text-gray-700 text-lg">
+                    Answers to common questions about my services, processes, and tools.
+                </p>
+
+                <div class="space-y-4 text-left">
+                    <!-- FAQ Item 1 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            How do I get started with your services?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            You can start by contacting me through the form above, clicking “Work With Me”, or booking
+                            your Discovery
+                            Call. I’ll respond to discuss your needs and how I can help streamline your workflows
+                            and projects.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            What tools do you use for automation and web development?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            I work with tools like GoHighLevel, Pabbly, Zapier for
+                            automation, ClickUp, Trello, Notion for project management, and
+                            modern web development tools like HTML, CSS, JavaScript, and
+                            WordPress.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            Can you help with both design and technical implementation?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            Absolutely! I combine creative design with automation and system
+                            implementation to deliver complete solutions that are both
+                            visually appealing and operationally efficient.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            How long does a typical project take?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            Project timelines vary depending on the scope, but most custom websites, funnels, and
+                            automation setups
+                            are completed within 2–6 weeks. I’ll provide a detailed schedule during our initial
+                            consultation.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            Are your systems and automations shared with other clients?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            No. Every project is custom-built and fully owned by the client. No systems, automations, or
+                            workflows are
+                            resold or replicated across different businesses.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div x-data="{ open: false }" class="fqa-card p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center font-semibold text-lg">
+                            Do you offer ongoing support after the project is completed?
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="mt-4 text-gray-700">
+                            Yes! I provide support and guidance to ensure your systems continue running smoothly and
+                            efficiently after
+                            launch.
+                        </div>
+                    </div>
+
+                    <!-- Add more FAQ items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action / FREE GUIDE CTA -->
+        <section>
+            <div id="cta-free"></div>
+
+            <script>
+                fetch("./promotion/cta-free.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("cta-free").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- footer -->
+        <section>
+            <div id="footer"></div>
+
+            <script>
+                fetch("./cta/footer.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+    </main>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script src="https://js-na2.hsforms.net/forms/embed/244740432.js" defer></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
