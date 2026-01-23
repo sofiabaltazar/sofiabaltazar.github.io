@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Sofia Baltazar</title>
+    <meta name="description"
+        content="Thank you for downloading our free resource. Sofia Baltazar | Creative Technologist & Systems Specialist." />
+
+    <!-- CSS -->
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/socialbar.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#111] text-white font-sans">
+  <!-- Sticky CTA  -->
+  <section>
+    <div id="ads"></div>
+
+    <script>
+      fetch("../promotion/ads.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("ads").innerHTML = html;
+        });
+    </script>
+  </section>
+
+  <!-- Sticky Social Bar -->
+  <section>
+    <div id="socialbar"></div>
+
+    <script>
+      fetch("../cta/socialbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("socialbar").innerHTML = html;
+        });
+    </script>
+  </section>
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar_second"></div>
+
+            <script>
+                fetch("../cta/navbar_second.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar_second").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- Thank You Section -->
+        <section class="flex items-center justify-center min-h-screen px-6">
+            <div class="text-center max-w-xl p-8 rounded-xl shadow-lg">
+                <h1 class="text-4xl font-bold text-gold mb-4">Thank You!</h1>
+                <p class="text-gray-700 mb-6">
+                    We’ve received your submission successfully. I appreciate you taking the time to connect.
+                    Stay tuned for updates, resources, or emails from me.
+                </p>
+                <br>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="../freebies.html"
+                        class="btn btn-warning px-6 py-3 inline-block text-center font-semibold rounded hover:bg-yellow-600 transition">
+                        Explore More Freebies
+                    </a>
+                    <a href="../projects.html"
+                        class="btn btn-outline-warning px-6 py-3 inline-block text-center font-semibold rounded hover:bg-yellow-600 transition">
+                        View My Projects
+                    </a>
+                    <a href="../contact.html"
+                        class="btn btn-outline-warning px-6 py-3 inline-block text-center font-semibold rounded hover:bg-yellow-600 transition">
+                        Work With Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section>
+            <div id="footer_second"></div>
+
+            <script>
+                fetch("../cta/footer_second.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer_second").innerHTML = html;
+                    });
+            </script>
+        </section>
+    </main>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script src="https://js-na2.hsforms.net/forms/embed/244740432.js" defer></script>
+    <!-- End of HubSpot Embed Code -->
+
+</body>
+
+</html>
