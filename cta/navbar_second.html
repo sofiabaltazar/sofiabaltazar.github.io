@@ -1,0 +1,135 @@
+<!-- UPDATED STICKY NAVBAR WITH TWO DROPDOWNS -->
+<nav x-data="{ open: false, dropdownAbout: false, dropdownServices: false }"
+    class="mega-nav sticky top-0 z-50 bg-black border-b shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Brand -->
+        <a href="../index.html" class="text-xl font-bold text-gold">
+            Sofia Baltazar
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex gap-8 text-sm font-medium text-gray-100 items-center">
+            <li><a href="../index.html" class="hover:text-gold transition">Home</a></li>
+
+            <!-- About Dropdown -->
+            <li class="relative" @mouseenter="dropdownAbout = true" @mouseleave="dropdownAbout = false">
+                <button class="flex items-center gap-1 hover:text-gold transition focus:outline-none"
+                    aria-haspopup="true" :aria-expanded="dropdownAbout">
+                    About <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <ul x-show="dropdownAbout" x-transition
+                    class="absolute top-full left-0 mt-2 w-48 bg-[#111] border border-gray-700 rounded shadow-lg py-2 z-50"
+                    style="display: none;">
+                    <li><a href="../about_me.html"
+                            class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">About
+                            Me</a></li>
+                    <li><a href="../legal.html"
+                            class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Legal
+                            & Security</a>
+                    </li>
+                    <li><a href="./terms.html"
+                            class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Terms
+                            & Conditions</a>
+                    </li>
+                    <li><a href="../privacy.html"
+                            class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Privacy
+                            Policy</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="relative" @mouseenter="dropdownServices = true" @mouseleave="dropdownServices = false">
+                <button class="flex items-center gap-1 hover:text-gold transition focus:outline-none"
+                    aria-haspopup="true" :aria-expanded="dropdownServices">
+                    Services <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <ul x-show="dropdownServices" x-transition
+                    class="absolute top-full left-0 mt-2 w-48 bg-[#111] border border-gray-700 rounded shadow-lg py-2 z-50"
+                    style="display: none;">
+                    <li><a href="../book-a-call-form.html"
+                            class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Discovery
+                            Call</a></li>
+                    <!-- <li><a href="../get-service.html"
+                                    class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Get
+                                    Services</a></li>-->
+                    <!-- <li><a href="../free-guide.html"
+                                    class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">Free
+                                    Guide</a></li>-->
+                    <!-- <li><a href="../freebies.html"
+                                    class="block px-4 py-2 text-gray-100 hover:bg-gold hover:text-black transition">More
+                                    Freebies</a></li>-->
+                </ul>
+            </li>
+
+            <li><a href="../projects.html" class="hover:text-gold transition">Projects</a></li>
+        </ul>
+
+        <!-- CTA -->
+        <a href="./contact.html"
+            class="button-contact hidden md:inline-block px-5 py-2 rounded-md text-sm bg-gold text-black hover:bg-gold-soft transition">
+            Work With Me
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="md:hidden text-2xl text-gray-100" @click="open = !open" aria-label="Toggle Menu">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div x-show="open" x-transition class="md:hidden bg-[#111] text-gray-100">
+        <ul class="flex flex-col gap-2 p-4">
+            <li><a href="../index.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Home</a>
+            </li>
+
+            <!-- About Mobile Dropdown -->
+            <li>
+                <button @click="dropdownAbout = !dropdownAbout"
+                    class="w-full text-left flex justify-between items-center px-3 py-2 hover:bg-gold hover:text-black rounded">
+                    About Us <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <ul x-show="dropdownAbout" x-transition class="pl-4 mt-2 space-y-1" style="display:none;">
+                    <li><a href="../about_me.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">About
+                            Me</a>
+                    </li>
+                    <li><a href="../legal.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Legal &
+                            Security</a></li>
+                    <li><a href="../terms.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Terms &
+                            Conditions</a></li>
+                    <li><a href="../privacy.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Privacy
+                            Policy</a></li>
+                </ul>
+            </li>
+
+            <!-- Services Mobile Dropdown -->
+            <li>
+                <button @click="dropdownServices = !dropdownServices"
+                    class="w-full text-left flex justify-between items-center px-3 py-2 hover:bg-gold hover:text-black rounded">
+                    Services <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <ul x-show="dropdownServices" x-transition class="pl-4 mt-2 space-y-1" style="display:none;">
+                    <li><a href="../book-a-call-form.html"
+                            class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Discovery Call</a></li>
+                    <!-- <li><a href="../get-service.html"
+                                    class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Get
+                                    Services</a></li>-->
+                    <!-- <li><a href="../free-guide.html"
+                                    class="active block px-3 py-2 hover:bg-gold hover:text-black rounded">Free
+                                    Guide</a></li>-->
+                    <!-- <li><a href="../freebies.html"
+                                    class="block px-3 py-2 hover:bg-gold hover:text-black rounded">More
+                                    Freebies</a></li>-->
+                </ul>
+            </li>
+
+            <li><a href="../projects.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Projects</a>
+            </li>
+            <li><a href="../contact.html" class="block px-3 py-2 hover:bg-gold hover:text-black rounded">Work
+                    with
+                    Me</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- END OF NAVBAR -->
