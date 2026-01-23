@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Baltazar | projects Information</title>
+    <meta name="description"
+        content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+    <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+    <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+    <meta property="og:description"
+        content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+    <meta property="og:image" content="assets/Profile Picture.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Custom CSS -->
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/socialbar.css" rel="stylesheet" />
+    <link href="../css/case-study.css" rel="stylesheet" />
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Standard favicon for browsers -->
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <!-- Include Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-[#111] text-gray-900 font-sans">
+    <!-- Sticky CTA -->
+    <div x-data="{ open: true }" x-show="open" class="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-lg shadow-lg z-50 flex flex-col md:flex-row 
+      items-center justify-between w-92 md:w-106 space-y-2 md:space-y-0 md:space-x-4">
+
+        <span class="text-center md:text-left font-medium">
+            Book Your Free 15-Minute Consultation Today!
+        </span>
+
+        <div class="flex gap-2">
+            <a href="./book-a-call-form.html"
+                class="bg-white text-blue-600 px-4 py-1 rounded hover:bg-gray-100 transition font-semibold">
+                Book Free Call
+            </a>
+            <button @click="open = false" class="font-bold hover:text-gray-200">
+                ✕
+            </button>
+        </div>
+    </div>
+
+    <!-- Sticky Social Bar -->
+    <section>
+        <div id="socialbar"></div>
+
+        <script>
+            fetch("../cta/socialbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("socialbar").innerHTML = html;
+                });
+        </script>
+    </section>
+
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar_second"></div>
+
+            <script>
+                fetch("../cta/navbar_second.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar_second").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- ghl-quickbooks-integration blog -->
+        <section class="case-study gray-bg">
+            <div class="container">
+                <div class="row align-items-start">
+                    <!-- Main Case Study Content -->
+                    <div class="col-lg-8 m-15px-tb text-white">
+                        <article class="article">
+                            <!-- Case Study Image Carousel -->
+                            <div id="qbCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#qbCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#qbCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner rounded-lg shadow-lg">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/case-study-image/GHL-QB-Integration/qb.png"
+                                            class="d-block w-100" alt="QuickBooks integration screenshot">
+                                    </div>
+                                    <!--<div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="Optional second screenshot">
+                            </div>-->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#qbCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#qbCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <!-- Case Study Title & Info -->
+                            <div class="article-title">
+                                <h6><a href="#">Project Type: Integration</a></h6>
+                                <h2>GHL → QuickBooks Integration</h2>
+                                <div class="media align-items-center">
+                                    <div class="avatar">
+                                        <img src="../assets/my image/Profile Picture.png" alt="Author avatar">
+                                    </div>
+                                    <div class="media-body">
+                                        <label>Sofia Baltazar</label>
+                                        <span>10 JAN 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case Study Content -->
+                            <div class="article-content">
+                                <h3>Problem</h3>
+                                <br>
+                                <p>Manual invoicing in QuickBooks caused delays, errors, and redundant work. Data had to
+                                    be transferred manually from GoHighLevel, increasing the risk of mistakes.</p>
+
+                                <h3>Solution</h3>
+                                <br>
+                                <p>Built an automated workflow connecting GoHighLevel to QuickBooks via Pabbly, so that
+                                    invoices are generated instantly whenever a client purchase or appointment is
+                                    confirmed.
+                                    Reduces errors and manual work while speeding up billing processes.</p>
+
+                                <h3>Tools Used</h3>
+                                <br>
+                                <ul>
+                                    <li>GoHighLevel (CRM & workflow automation)</li>
+                                    <li>Pabbly (Integration platform)</li>
+                                    <li>QuickBooks (Accounting & invoicing)</li>
+                                </ul>
+
+                                <h3>Results</h3>
+                                <blockquote>
+                                    <p>Invoices are now automatically created, sent, and tracked without manual effort,
+                                        saving
+                                        hours of work weekly and improving financial accuracy.</p>
+                                    <br>
+                                    <footer class="blockquote-footer">Sofia Baltazar</footer>
+                                </blockquote>
+                            </div>
+
+                            <!-- Project Tags -->
+                            <div class="widget widget-tags">
+                                <div class="widget-title">
+                                    <h3>Project Tags</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="nav tag-cloud">
+                                        <a href="#">Integration</a>
+                                        <a href="#">QuickBooks</a>
+                                        <a href="#">GoHighLevel</a>
+                                        <a href="#">Automation</a>
+                                        <a href="#">Invoicing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4 m-15px-tb blog-aside text-white">
+                        <!-- Author Info -->
+                        <div class="widget widget-author">
+                            <div class="widget-title">
+                                <h3>About the Author</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="media align-items-center">
+                                    <div class="avatar">
+                                        <img src="../assets/my image/Profile Picture.png" alt="Author avatar">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Sofia Baltazar</h6>
+                                    </div>
+                                </div>
+                                <p>Creative Technologist specializing in automation systems, web development, and
+                                    business workflows to help clients save time and grow efficiently.</p>
+                            </div>
+                        </div>
+
+                        <!-- Other Case Studies -->
+                        <div class="widget widget-latest-post">
+                            <div class="widget-title">
+                                <h3>Other Case Studies</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <h4><a href="../projects/lead-to-client-pipeline-automation.html"
+                                                class="gold-link"><strong>Lead-to-Client Pipeline
+                                                    Automation</strong></a></h4>
+                                        <p><strong>Problem:</strong> Manual lead handling. Automated workflow to capture
+                                            leads.</p>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">Sofia Baltazar</a>
+                                            <a class="date" href="#">20 JAN 2026</a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#"><img
+                                                src="../assets/case-study-image/Lead-to-Client/Lead-to-Client.png"
+                                                alt="Project thumbnail"></a>
+                                    </div>
+                                </div>
+                                <div class="latest-post-aside media">
+                                    <div class="lpa-left media-body">
+                                        <h4><a href="../projects/saas-crm-appointment-funnel.html"
+                                                class="gold-link"><strong>CRM Appointment Funnel</strong></a></h4>
+                                        <p><strong>Problem:</strong> Low appointment show-up rate. Streamlined booking &
+                                            reminders.</p>
+                                        <div class="lpa-meta">
+                                            <a class="name" href="#">Sofia Baltazar</a>
+                                            <a class="date" href="#">15 JAN 2026</a>
+                                        </div>
+                                    </div>
+                                    <div class="lpa-right">
+                                        <a href="#"><img
+                                                src="../assets/case-study-image/saas-appointment/crm_appointment.png"
+                                                alt="Project thumbnail"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="widget widget-latest-post">
+                            <div class="widget-title text-gold">
+                                <h4>Ready to Automate Your Invoicing?</h4>
+                            </div>
+                            <div class="widget-body text-center"
+                                style="background-color:#1A1A1A; padding: 20px; border-radius: 5px;">
+                                <a href="../book-a-call-form.html" class="cta-btn">
+                                    Book Your Automation Consultation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of ghl-quickbooks-integration blog -->
+
+        <!-- footer -->
+        <section>
+            <div id="footer_second"></div>
+
+            <script>
+                fetch("../cta/footer_second.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer_second").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+    </main>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script src="https://js-na2.hsforms.net/forms/embed/244740432.js" defer></script>
+    <!-- End of HubSpot Embed Code -->
+
+</body>
+
+</html>
