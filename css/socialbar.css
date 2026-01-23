@@ -1,0 +1,54 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/* ...existing code... */
+
+.sticky-social {
+  position: fixed;              /* use fixed so it stays visible while scrolling */
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: transparent;
+  pointer-events: auto;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  transition: transform .15s ease, background .15s ease, color .15s ease;
+}
+
+.social-link i { font-size: 18px; line-height: 1; }
+
+/* subtle hover / focus */
+.social-link:hover,
+.social-link:focus-visible {
+  transform: translateX(6px);
+  background: linear-gradient(90deg, #D4AF37, #FDE68A);
+  color: #111;
+  outline: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* hide on smaller screens to avoid overlap with mobile UI */
+@media (max-width: 767px) {
+  .sticky-social { display: none; }
+}

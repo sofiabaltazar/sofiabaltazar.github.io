@@ -1,0 +1,102 @@
+/* Contact Section */
+#contact {
+  padding: 4rem 0; /* top-bottom spacing */
+}
+
+.contact {
+  background-image: url("../assets/website image/portfolio website - background.png");
+}
+
+.contact__wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Contact Info Column */
+.contact-info__wrapper,
+.bg-gradient {
+  background: linear-gradient(135deg, #0f1218, #1c1d18); /* nice gradient */
+  color: #fff;
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.contact-form__wrapper {
+  background: linear-gradient(135deg, #c8ce74, #ffda09)
+}
+
+.contact-info__wrapper h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-info__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.contact-info__list li {
+  margin-bottom: 1.25rem;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+.contact-info__list li span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.25rem;
+}
+
+/* Decorative SVG */
+.contact-info__wrapper figure svg {
+  display: block;
+  opacity: 0.3;
+}
+
+/* HubSpot form container */
+.contact-form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HubSpot injected iframe */
+.hs-form-frame iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 520px;
+  border: none;
+}
+
+/* Optional: control form content width */
+.hs-form-frame {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info__wrapper,
+  .contact-form__wrapper {
+    order: unset !important;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-info__list li {
+    padding-left: 1.5rem;
+  }
+}

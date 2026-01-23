@@ -1,0 +1,397 @@
+/* --- Default Light Mode --- */
+:root {
+
+    --primary-color: #000000;    /* Dark main color for text/buttons */
+    --secondary-color: #343434;    /* Dark accent */
+    --accent-color: #AD974F;    /* Highlight / accent color */
+    --background-color: #1A1A1A;    /* background */
+    --text-color: #FFFFFF;    /* Main text */
+}
+
+/* --- Base Styles --- */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------------*/
+
+
+.offer-container {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+.offer-container button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+}
+
+.offer-container button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.offer-container button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.offer-container button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+.offer-container button:hover span {
+    transform: translateX(7px);
+}
+
+
+/* --------------------------------------------------------------------------------*/
+
+/* nav section */
+
+.mega-nav a {
+    color: var(--text-color);
+}
+
+.mega-nav a:hover {
+    color: var(--accent-color);
+}
+
+.mega-nav .active {
+    color: var(--accent-color);
+}
+
+.mega-nav button:hover {
+    color: var(--accent-color);
+}
+
+.mega-nav .active button {
+    color: var(--accent-color);
+}
+
+.mega-nav .button-contact {
+    color: var(--primary-color) !important;
+    background-color: var(--accent-color);
+}
+
+.mega-nav .button-contact:hover {
+    color: var(--accent-color) !important;
+    background-color: var(--background-color);
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.breadcrumb a {
+  color: var(--text-color);
+}
+.breadcrumb a:hover {
+  color: var(--accent-color);
+}
+.breadcrumb .active {
+  color: var(--accent-color);
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* hero section */
+.hero {
+    background-color: #191a1a;
+    color: var(--text-color);
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+    background: var(--accent-color);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #c0b304;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+.box {
+    width: 240px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: var(--background-color);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: var(--accent-color);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: var(--accent-color);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/* --------------------------------------------------------------------------------*/
+
+.tools {
+    background-color: var(--accent-color);
+}
+
+.tools .carousel-text {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  padding: 16px 32px;
+  white-space: nowrap;
+  line-height: 1.1;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+
+/* --------------------------------------------------------------------------------*/
+
+/* about section */
+
+.about {
+    background-color: var(--background-color);
+}
+
+.about .media {
+    background-color: var(--primary-color);
+}
+
+.text-custom {
+    color: var(--accent-color) !important;
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* project section */
+.project {
+    background-image: url("../assets/website image/porfolio website - background dark.png");
+    color: var(--text-color);
+}
+
+.project p {
+    color: var(--text-color);
+}
+
+.project .project-card {
+    background-color: var(--background-color);
+}
+
+
+.project .project-card .project-button a {
+    color: var(--accent-color);
+}
+
+.project .project-card .project-button a:hover {
+    color: var(--background-color);
+}
+
+
+/* --------------------------------------------------------------------------------*/
+
+/* testimonials section */
+.testimonials {
+    background-color: #111;
+    color: var(--text-color);
+}
+
+.testimonials .testimonials-card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* fqa section */
+.fqa {
+    background-color: #111;
+    color: var(--text-color);
+}
+
+.fqa p {
+    color: var(--text-color);
+}
+
+.fqa .fqa-card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* footer section */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.footer ul li a {
+    color: var(--text-color);
+}
+
+.footer ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* --------------------------------------------------------------------------------*/
+
+/* Black & Gold Theme */
+:root {
+  --gold: #c9a24d;
+  --gold-soft: #e6c97a;
+}
+
+/* Gold Buttons */
+.btn-gold {
+  background-color: var(--gold);
+  color: #000;
+  font-weight: 500;
+  border: 1px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-soft);
+  border-color: var(--gold-soft);
+  color: #000;
+}
+
+/* Gold text helper */
+.text-gold {
+  color: var(--gold);
+}
+
+/* Card borders */
+.border-gold {
+  border: 1px solid var(--gold);
+}
+
+/* Card hover motion */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(201, 162, 77, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Footer adjustments */
+footer p {
+  font-size: 0.9rem;
+}
