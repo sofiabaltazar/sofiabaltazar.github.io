@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Baltazar | Get Services</title>
+    <meta name="description"
+        content="Sofia Baltazar | Creative Technologist & Systems Specialist. Automation, Web Design, Branding for Entrepreneurs and Small Businesses." />
+    <meta name="keywords" content="Automation, Web Design, CRM, Project Management, Business Systems, Sofia Baltazar" />
+    <meta property="og:title" content="Sofia Baltazar | Creative Technologist & Systems Specialist" />
+    <meta property="og:description"
+        content="Helping entrepreneurs and small businesses streamline workflows and grow their brand efficiently." />
+    <meta property="og:image" content="assets/Profile Picture.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Custom CSS -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/service.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/socialbar.css" rel="stylesheet" />
+    <link href="./css/get-service.css" rel="stylesheet" />
+
+    <!-- Standard favicon for browsers -->
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <!-- Include Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-[#1A1A1A] text-white-900 font-sans">
+    <!-- Sticky CTA  -->
+    <section>
+        <div id="ads"></div>
+
+        <script>
+            fetch("./promotion/ads.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("ads").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <!-- Sticky Social Bar -->
+    <section>
+        <div id="socialbar"></div>
+
+        <script>
+            fetch("./cta/socialbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("socialbar").innerHTML = html;
+                });
+        </script>
+    </section>
+
+    <main>
+        <!-- Top Navigation Bar -->
+        <section>
+            <div id="navbar"></div>
+
+            <script>
+                fetch("./cta/navbar.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("navbar").innerHTML = html;
+                    });
+            </script>
+        </section>
+        <!-- Sofia Baltazar Service Page -->
+        <section class="hero d-flex align-items-center text-white"
+            style="height:60vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/website image/background-about-me.png') center/cover no-repeat;">
+            <div class="container text-center">
+                <!-- Hero Section -->
+                <div class="container mx-auto text-center px-6 text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Creative Tech & Systems Solutions for Visionary
+                        Professionals</h1>
+                    <p class="text-gray-700 text-lg md:text-xl mb-8 text-white">Helping you streamline workflows, design
+                        smarter
+                        systems, and scale your creative business.</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="./book-a-call-form.html" class="cssbuttons-io-button">
+                            Book a Call
+                            <div class="icon">
+                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#services">
+                            <span class="box">
+                                Explore Service
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Service Pillars -->
+        <section id="services" class="py-16 px-6">
+            <div class="container">
+                <h2 class="text-3xl text-[#AD974F] font-bold text-center mb-12">Our Service Pillars</h2>
+                <div class="row gutters-sm">
+                    <!-- Creative & Funnel Design -->
+                    <div class="col-sm-6 col-xl-3 mb-3">
+                        <div class="card bg-[#343434]">
+                            <div class="card-header border-bottom flex-column align-items-start p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-box text-white h3 stroke-width-1 mb-2">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <h4 class="font-weight-light mb-2 text-[#AD974F]"><strong>Creative & Funnel
+                                        Design</strong></h4>
+                                <p class="font-size-sm mb-0 text-white">Focus: Visual structure and conversion-focused
+                                    assets.</p>
+                            </div>
+                            <div class="bg-[#AD974F] card-header border-bottom justify-content-center py-4">
+                                <ul class="list-disc list-inside text-white">
+                                    <li>Landing page design</li>
+                                    <li>UI layouts and interface design</li>
+                                    <li>Brand-aligned marketing assets</li>
+                                    <li>Conversion-focused page structures</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-[#AD974F] font-semibold mb-2">Service Offers:</p>
+                                <ul class="list-unstyled text-white mb-0">
+                                    <li><strong class="text-[#AD974F]">Funnel Starter Package</strong> – 1 landing page
+                                        + branded assets</li>
+                                    <li><strong class="text-[#AD974F]">Brand Alignment Kit</strong> – Full UI &
+                                        marketing asset package</li>
+                                    <li><strong class="text-[#AD974F]">Conversion Optimization Session</strong> – Audit
+                                        & tweaks for higher conversions</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer justify-content-center p-3">
+                                <a href="#contact"
+                                    class="btn btn-outline-secondary text-white border-[#AD974F] hover:bg-[#AD974F] hover:text-black">Get
+                                    in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Technical Implementation -->
+                    <div class="col-sm-6 col-xl-3 mb-3">
+                        <div class="card bg-[#343434]">
+                            <div class="card-header border-bottom flex-column align-items-start p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-layers text-white h3 stroke-width-1 mb-2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                                <h4 class="font-weight-light mb-2 text-[#AD974F]"><strong>Web & Technical
+                                        Implementation</strong></h4>
+                                <p class="font-size-sm mb-0 text-white">Focus: Building and maintaining functional
+                                    digital platforms.</p>
+                            </div>
+                            <div class="bg-[#AD974F] card-header border-bottom justify-content-center py-4">
+                                <ul class="list-disc list-inside text-white">
+                                    <li>Website development and deployment</li>
+                                    <li>Platform setup and configuration</li>
+                                    <li>Tool integrations and API connections</li>
+                                    <li>Technical troubleshooting</li>
+                                    <li>Web system performance optimization</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-[#AD974F] font-semibold mb-2">Service Offers:</p>
+                                <ul class="list-unstyled text-white mb-0">
+                                    <li><strong class="text-[#AD974F]">Website Launch Package</strong> – Design to
+                                        deployment</li>
+                                    <li><strong class="text-[#AD974F]">Platform Integration Package</strong> – Connect
+                                        CRMs, email systems, tools</li>
+                                    <li><strong class="text-[#AD974F]">Technical Support Retainer</strong> – Ongoing
+                                        troubleshooting & optimization</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer justify-content-center p-3">
+                                <a href="#contact"
+                                    class="btn btn-outline-secondary text-white border-[#AD974F] hover:bg-[#AD974F] hover:text-black">Get
+                                    in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Systems & Automation -->
+                    <div class="col-sm-6 col-xl-3 mb-3">
+                        <div class="card bg-[#343434]">
+                            <div class="card-header border-bottom flex-column align-items-start p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-settings text-white h3 stroke-width-1 mb-2">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 12 3h0a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                                <h4 class="font-weight-light mb-2 text-[#AD974F]"><strong>Systems & Automation</strong>
+                                </h4>
+                                <p class="font-size-sm mb-0 text-white">Focus: Building backend operational
+                                    infrastructure.</p>
+                            </div>
+                            <div class="bg-[#AD974F] card-header border-bottom justify-content-center py-4">
+                                <ul class="list-disc list-inside text-white">
+                                    <li>CRM structure and setup</li>
+                                    <li>Workflow automation</li>
+                                    <li>Email system configuration & management</li>
+                                    <li>Backend process optimization</li>
+                                    <li>Tool ecosystem organization</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-[#AD974F] font-semibold mb-2">Service Offers:</p>
+                                <ul class="list-unstyled text-white mb-0">
+                                    <li><strong class="text-[#AD974F]">Automation Kickstart</strong> – Basic workflows
+                                        and email automation</li>
+                                    <li><strong class="text-[#AD974F]">CRM Launch Package</strong> – Complete CRM
+                                        structure + onboarding</li>
+                                    <li><strong class="text-[#AD974F]">Workflow Optimization Audit</strong> – Streamline
+                                        existing processes</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer justify-content-center p-3">
+                                <a href="#contact"
+                                    class="btn btn-outline-secondary text-white border-[#AD974F] hover:bg-[#AD974F] hover:text-black">Get
+                                    in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project & Execution Support -->
+                    <div class="col-sm-6 col-xl-3 mb-3">
+                        <div class="card bg-[#343434]">
+                            <div class="card-header border-bottom flex-column align-items-start p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-clipboard text-white h3 stroke-width-1 mb-2">
+                                    <path d="M9 2h6a2 2 0 0 1 2 2v2H7V4a2 2 0 0 1 2-2z"></path>
+                                    <path d="M7 8h10v12H7z"></path>
+                                </svg>
+                                <h4 class="font-weight-light mb-2 text-[#AD974F]"><strong>Project & Execution
+                                        Support</strong></h4>
+                                <p class="font-size-sm mb-0 text-white">Focus: Ensuring systems operate smoothly.</p>
+                            </div>
+                            <div class="bg-[#AD974F] card-header border-bottom justify-content-center py-4">
+                                <ul class="list-disc list-inside text-white">
+                                    <li>QA and system testing</li>
+                                    <li>Documentation creation</li>
+                                    <li>System maintenance</li>
+                                    <li>Implementation oversight</li>
+                                    <li>Launch support</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-[#AD974F] font-semibold mb-2">Service Offers:</p>
+                                <ul class="list-unstyled text-white mb-0">
+                                    <li><strong class="text-[#AD974F]">Project Launch Support</strong> – QA & oversight
+                                        for new systems</li>
+                                    <li><strong class="text-[#AD974F]">Documentation & Training Pack</strong> – Manuals,
+                                        training guides, checklists</li>
+                                    <li><strong class="text-[#AD974F]">Ongoing Execution Retainer</strong> – Maintenance
+                                        & support for long-term projects</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer justify-content-center p-3">
+                                <a href="#contact"
+                                    class="btn btn-outline-secondary text-white border-[#AD974F] hover:bg-[#AD974F] hover:text-black">Get
+                                    in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Products
+        <section id="products" class="bg-gray-50 py-16 px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">Digital Products & Knowledge Resources</h2>
+                <p class="text-gray-700 mb-6">E-books, templates, mini-courses, and newsletters designed to help you
+                    grow and scale efficiently.</p>
+                <a href="#shop" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">Explore
+                    Products</a>
+            </div>
+        </section> -->
+
+        <!-- Tools & Approach - Gold & Black Theme -->
+        <section class="container mx-auto py-16 px-6">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-400">Our Tools & Approach</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-[#343434] rounded-lg shadow-lg hover:shadow-yellow-400/50 transition">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Design & Visuals</h3>
+                    <p class="text-gray-300">Canva, Figma</p>
+                </div>
+                <div class="p-6 bg-[#343434] rounded-lg shadow-lg hover:shadow-yellow-400/50 transition">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Workflow & Templates</h3>
+                    <p class="text-gray-300">Notion, Miro</p>
+                </div>
+                <div class="p-6 bg-[#343434] rounded-lg shadow-lg hover:shadow-yellow-400/50 transition">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Video & Web</h3>
+                    <p class="text-gray-300">Loom, Webflow, WordPress</p>
+                </div>
+                <div class="p-6 bg-[#343434] rounded-lg shadow-lg hover:shadow-yellow-400/50 transition">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Payments</h3>
+                    <p class="text-gray-300">Stripe, PayPal</p>
+                </div>
+                <div class="p-6 bg-[#343434] rounded-lg shadow-lg hover:shadow-yellow-400/50 transition">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Email Automation</h3>
+                    <p class="text-gray-300">MailerLite, ConvertKit</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action / FREE GUIDE CTA -->
+        <section>
+            <div id="cta-free"></div>
+
+            <script>
+                fetch("./promotion/cta-free.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("cta-free").innerHTML = html;
+                    });
+            </script>
+        </section>
+
+        <!-- CONTACT FORM / Final CTA Section -->
+        <section id="contact" class="contact py-16">
+            <div class="container">
+                <div class="contact__wrapper shadow-lg rounded-lg overflow-hidden">
+                    <div class="row g-0">
+
+                        <!-- Left Column: Contact Info -->
+                        <div
+                            class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 d-flex flex-column justify-content-center order-lg-1">
+                            <h3 class="text-white mb-4">Let’s Build Something Unique</h3>
+                            <ul class="contact-info__list list-unstyled">
+                                <li class="mb-3 ps-4 position-relative">Whether it’s a custom website, funnel, or
+                                    automation workflow,
+                                    I create solutions that are fully tailored to your business.
+                                </li>
+                                <li class="mb-3 ps-4 position-relative">All projects are client-specific and owned
+                                    entirely by you — no
+                                    shared systems, no resold automation.
+                                </li>
+                                <li class="mb-3 ps-4 position-relative">
+                                </li>
+                            </ul>
+
+                            <!-- Platforms Section -->
+                            <div class="mt-3 text-white">
+                                <p class="mb-2">You can also hire or collaborate with me via:</p>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <a href="https://www.upwork.com/freelancers/~01c5d591316f0e51ca" target="_blank"
+                                        class="btn btn-outline-light btn-sm">Upwork</a>
+                                    <a href="https://www.fiverr.com/s/VY9q2ZZ" target="_blank"
+                                        class="btn btn-outline-light btn-sm">Fiverr</a>
+                                    <a href="https://www.onlinejobs.ph/jobseekers/info/4713802" target="_blank"
+                                        class="btn btn-outline-light btn-sm">OnlinePH</a>
+                                </div>
+                            </div>
+
+                            <!-- Social Media -->
+                            <div class="contact-social mt-4">
+                                <h6 class="text-white mb-3">Follow Me</h6>
+                                <div class="d-flex gap-3">
+                                    <a href="https://www.facebook.com/sofiabaltazar.working" aria-label="Facebook"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://www.tiktok.com/@sofiabaltazar.working" aria-label="TikTok"><i
+                                            class="bi bi-tiktok"></i></a>
+                                    <a href="https://www.instagram.com/sofiabaltazar.working" aria-label="Instagram"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://github.com/sofiabaltazar" aria-label="GitHub"><i
+                                            class="bi bi-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/sofia-baltazar-working/"
+                                        aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Form -->
+                        <div class="col-lg-7 contact-form__wrapper p-5 order-lg-2 d-flex justify-content-center">
+                            <div class="hs-form-frame" data-region="na2"
+                                data-form-id="6e5e36fd-285e-44af-969b-267b5b4ebee1" data-portal-id="244916206"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section>
+            <div id="footer"></div>
+
+            <script>
+                fetch("./cta/footer.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer").innerHTML = html;
+                    });
+            </script>
+        </section>
+    </main>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script src="https://js-na2.hsforms.net/forms/embed/244916206.js" defer>
+    </script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
