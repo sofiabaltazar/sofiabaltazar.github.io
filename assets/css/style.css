@@ -1,0 +1,208 @@
+:root {
+
+    /* =====================================================
+       Brand Colors
+    ===================================================== */
+
+    --brand-primary: #0D1326;
+    --brand-primary-second: #0B0E1B;
+    --brand-primary-third: #0e132b;
+    --brand-light-blue: #1e347e;
+
+    --brand-text: #c5c7ca;
+    --brand-text-second: #D0D3D6;
+
+    --brand-accent: #C9A24D;
+}
+
+/* Background */
+.bg-white {
+    background-color: var(--brand-text);
+}
+
+.bg-pure-white {
+    background-color: #ffffff;
+}
+
+.bg-gold-accent {
+    background-color: var(--brand-accent);
+}
+
+.bg-primary-navy {
+    background-color: var(--brand-primary);
+}
+
+.bg-dark-blue {
+    background-color: var(--brand-primary-second);
+}
+
+.bg-blue {
+    background-color: var(--brand-primary-third);
+}
+
+.bg-light-blue {
+    background-color: var(--brand-light-blue);
+}
+
+/* card */
+.bg-navy-card {
+    background-color: var(--brand-primary);
+}
+
+/* Text */
+.text-primary-navy {
+    color: var(--brand-primary);
+}
+
+.text-dark-blue {
+    color: var(--brand-primary-second);
+}
+
+.text-gold-accent {
+    color: var(--brand-accent);
+}
+
+.text-brand-light-gray {
+    color: var(--brand-text-second);
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    /* py-3.5 px-7 */
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    font-weight: 600;
+    /* font-semibold */
+    transition: all 0.2s ease;
+    gap: 0.5rem;
+    /* gap-2 */
+    text-decoration: none;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: var(--brand-accent);
+    /* bg-gold-accent */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* shadow-md */
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-primary);
+    /* hover:bg-slate-800 */
+}
+
+/* Secondary Button */
+.btn-secondary {
+    border: 1px solid var(--brand-primary);
+    color: #1e293b;
+    /* text-slate-800 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* shadow-sm */
+}
+
+.btn-secondary:hover {
+    color: var(--brand-text);
+    background-color: var(--brand-accent);
+    /* hover:bg-gold-accent */
+}
+
+.link {
+    display: inline-block;
+    color: #FAB95B;
+    font-weight: 600;
+    font-family: monospace;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-left: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #fcd34d;
+}
+
+/* Subtle geometric overlay for dark hero & feature sections */
+.bg-pattern-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.clip-curved-banner {
+    border-radius: 2rem;
+}
+
+.stroke-gold-text {
+    -webkit-text-stroke: 1.5px #C9A24D;
+    color: transparent;
+}
+
+@media (min-width: 768px) {
+    .stroke-gold-text {
+        -webkit-text-stroke: 2.5px #C9A24D;
+    }
+}
+
+.stroke-white-text {
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
+    color: transparent;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    width: 200%;
+    animation: marquee 24s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes subtle-float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.animate-subtle-float {
+    animation: subtle-float 6s ease-in-out infinite;
+}
+
+@keyframes aura-pulse {
+
+    0%,
+    100% {
+        opacity: 0.15;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(1.08);
+    }
+}
+
+.animate-aura {
+    animation: aura-pulse 7s ease-in-out infinite;
+}

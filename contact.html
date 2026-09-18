@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sofia Baltazar | Creative Technologist · Systems Designer · Digital Architect</title>
+    <!-- Google Fonts: Syne & Anton & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Syne:wght@700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+
+    <link rel="icon" type="image/png" href="./assets/image/SB - Logo Suite.png" sizes="32x32" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'primary-navy': '#0D1326',
+                    'dark-blue': '#0B0E1B',
+                    'deep-navy': '#090D1A',
+                    'brand-silver': '#C5C7CA',
+                    'brand-light-gray': '#D0D3D6',
+                    'gold-accent': '#C9A24D',
+                    'gold-accent-hover': '#b58f3b',
+                    'navy-border': '#1d2338',
+                    'navy-card': '#11172c',
+                },
+                extend: {
+                    "colors": {
+                        "surface-container": "#1b1f2d",
+                        "outline-variant": "#46464d",
+                        "on-secondary-container": "#f6cb72",
+                        "tertiary-fixed-dim": "#c5c7ca",
+                        "tertiary-container": "#111416",
+                        "on-tertiary": "#2e3133",
+                        "inverse-on-surface": "#2c303e",
+                        "on-error": "#690005",
+                        "primary-container": "#0d1326",
+                        "on-surface": "#dfe1f5",
+                        "tertiary-fixed": "#e1e2e6",
+                        "secondary-fixed-dim": "#ebc168",
+                        "inverse-surface": "#dfe1f5",
+                        "secondary-container": "#735500",
+                        "on-surface-variant": "#c6c6cd",
+                        "on-secondary-fixed": "#261a00",
+                        "on-primary-fixed": "#151b2e",
+                        "on-background": "#dfe1f5",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#262938",
+                        "surface-dim": "#0f1320",
+                        "tertiary": "#c5c7ca",
+                        "on-tertiary-container": "#7c7f81",
+                        "surface-bright": "#353947",
+                        "on-tertiary-fixed-variant": "#44474a",
+                        "on-primary": "#2a3044",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdf9f",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "secondary": "#ebc168",
+                        "surface-container-highest": "#303443",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#303443",
+                        "surface": "#0f1320",
+                        "outline": "#909097",
+                        "surface-tint": "#c0c5e0",
+                        "inverse-primary": "#585e74",
+                        "background": "#0f1320",
+                        "primary-fixed": "#dce1fc",
+                        "on-secondary": "#402d00",
+                        "on-primary-container": "#787e95",
+                        "primary": "#c0c5e0",
+                        "on-tertiary-fixed": "#191c1e",
+                        "primary-fixed-dim": "#c0c5e0",
+                        "surface-container-lowest": "#0a0e1b",
+                        "surface-container-low": "#171b29",
+                        "on-primary-fixed-variant": "#40465b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1.25rem",
+                        "gutter-mobile": "1rem",
+                        "space-xl": "2.5rem",
+                        "space-lg": "1.5rem",
+                        "space-xs": "0.25rem",
+                        "space-md": "1rem",
+                        "space-3xl": "6rem",
+                        "space-2xl": "4rem",
+                        "space-sm": "0.5rem",
+                        "margin": "3rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": [
+                            "Bebas Neue"
+                        ],
+                        "headline-sm": [
+                            "Bebas Neue"
+                        ],
+                        "display-xl": [
+                            "Bebas Neue"
+                        ],
+                        "label-sm": [
+                            "JetBrains Mono"
+                        ],
+                        "label-md": [
+                            "JetBrains Mono"
+                        ],
+                        "code-md": [
+                            "JetBrains Mono"
+                        ],
+                        "body-lg": [
+                            "Space Grotesk"
+                        ],
+                        "body-md": [
+                            "Space Grotesk"
+                        ],
+                        "body-sm": [
+                            "Space Grotesk"
+                        ],
+                        "headline-md": [
+                            "Bebas Neue"
+                        ],
+                        "headline-lg": [
+                            "Bebas Neue"
+                        ],
+                        "display-xl-mobile": [
+                            "Bebas Neue"
+                        ]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": [
+                            "36px",
+                            {
+                                "lineHeight": "40px",
+                                "letterSpacing": "0.03em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-sm": [
+                            "24px",
+                            {
+                                "lineHeight": "28px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "display-xl": [
+                            "96px",
+                            {
+                                "lineHeight": "96px",
+                                "letterSpacing": "0.04em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "label-sm": [
+                            "10px",
+                            {
+                                "lineHeight": "14px",
+                                "letterSpacing": "0.12em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "label-md": [
+                            "12px",
+                            {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.08em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "code-md": [
+                            "14px",
+                            {
+                                "lineHeight": "22px",
+                                "letterSpacing": "0em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "28px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-md": [
+                            "15px",
+                            {
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-sm": [
+                            "13px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "36px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "56px",
+                            {
+                                "lineHeight": "60px",
+                                "letterSpacing": "0.03em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "display-xl-mobile": [
+                            "56px",
+                            {
+                                "lineHeight": "56px",
+                                "letterSpacing": "0.04em",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-dark-blue font-body text-brand-light-gray antialiased selection:bg-gold-accent selection:text-deep-navy overflow-x-hidden">
+
+    <section>
+        <div id="navbar"></div>
+
+        <script>
+            fetch("./component/navbar.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("navbar").innerHTML = html;
+                });
+        </script>
+    </section>
+    <main>
+        <!-- SECTION 1: HERO / HEADER SECTION -->
+        <section class="w-full px-space-lg lg:px-space-xl py-space-2xl bg-surface-container-lowest">
+            <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+                <div class="flex items-center gap-space-xs">
+                    <span class="text-secondary font-label-sm text-label-sm">✦</span>
+                    <span class="font-label-sm text-label-sm text-tertiary-fixed-dim tracking-widest uppercase">01 —
+                        CONTACT &amp; INITIATION // DIRECT CHANNELS</span>
+                </div>
+                <div class="space-y-space-xs max-w-5xl">
+                    <h1
+                        class="font-headline-lg lg:font-display-xl text-headline-lg lg:text-display-xl text-on-surface uppercase tracking-wider leading-none">
+                        LET'S BUILD SOMETHING INTENTIONAL.
+                    </h1>
+                    <p class="font-headline-md text-headline-md text-secondary uppercase tracking-wide">
+                        START A CONVERSATION ABOUT YOUR DIGITAL ECOSYSTEM.
+                    </p>
+                </div>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+                    Whether you're looking to engineer a custom high-conversion website, architect an automated
+                    funnel, or unify fragmented back-office tools into streamlined workflows, I'm currently booking
+                    select systems architecture and design projects for upcoming quarters.
+                </p>
+            </div>
+        </section>
+        <!-- SECTION 2: DUAL-COLUMN MAIN INTERACTION GRID -->
+        <section class="w-full px-space-lg lg:px-space-xl py-space-2xl bg-surface">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+                <!-- COLUMN 1: THE SYSTEMS INQUIRY & INTAKE PROTOCOL -->
+                <div
+                    class="lg:col-span-7 flex flex-col bg-surface-container p-space-lg lg:p-space-xl space-y-space-lg shadow-xl">
+                    <div class="flex items-center justify-between pb-space-sm">
+                        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">02 // PROJECT INTAKE FORM</span>
+                    </div>
+
+                </div>
+                <!-- COLUMN 2: DIRECT CHANNELS & CONSULTATION ARCHITECTURE -->
+                <div class="lg:col-span-5 flex flex-col space-y-space-lg">
+                    <!-- Editorial Portrait Card -->
+                    <div class="bg-surface-container p-space-md space-y-space-sm shadow-xl">
+                        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+                            <img alt="Sofia Baltazar in technical systems studio"
+                                class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
+                                src="./assets/image/SB LinkedIn Profile - Sofia Baltazar.png">
+                            <div
+                                class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent p-space-md flex flex-col justify-end">
+                                <span
+                                    class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide leading-none">SOFIA
+                                    BALTAZAR</span>
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Systems
+                                    Designer &amp; Creative Technologist</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between px-space-xs pt-space-xs">
+                            <div class="flex items-center gap-space-xs">
+                                <span class="w-2 h-2 bg-secondary"></span>
+                                <span class="font-code-md text-code-md text-tertiary-fixed-dim">PORTLAND LAB:
+                                    ONLINE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Quick Booking / Consultation Call Card -->
+                    <!-- <div class="bg-surface-container p-space-lg space-y-space-md shadow-xl">
+                        <div class="space-y-space-xs">
+                            <div class="flex items-center gap-space-xs">
+                                <span class="text-secondary font-label-sm text-label-sm">✦</span>
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">EXPEDITED
+                                    ROUTE</span>
+                            </div>
+                            <h3
+                                class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide leading-none">
+                                SYSTEMS ARCHITECTURE DIAGNOSTIC CALL
+                            </h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                A focused 30-minute diagnostic session to assess your current website, funnel, and
+                                tooling landscape before scoping.
+                            </p>
+                        </div>
+                        <a class="btn btn-primary"
+                            href="#"
+                            onclick="alert('Diagnostic Calendar Initialized. Connecting to booking console...'); return false;">
+                            <span>SCHEDULE 30-MIN DIAGNOSTIC → </span>
+                        </a>
+                    </div> -->
+                    <!-- Direct Contact Specs -->
+                    <div class="bg-surface-container p-space-lg space-y-space-md shadow-xl">
+                        <span
+                            class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest block">
+                            DIRECT COMMUNICATIONS
+                        </span>
+                        <div class="space-y-space-sm">
+                            <!-- Email -->
+                            <div class="flex items-center justify-between p-space-sm bg-surface-container-lowest">
+                                <div class="flex flex-col">
+                                    <span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase">Direct
+                                        Email</span>
+                                    <span
+                                        class="font-code-md text-code-md text-on-surface selection:bg-secondary">sofiabaltazar.working@gmail.com</span>
+                                </div>
+                                <button
+                                    class="font-label-sm text-label-sm text-secondary hover:text-on-surface bg-surface-container px-space-sm py-1 uppercase transition-colors"
+                                    onclick="navigator.clipboard.writeText('sofiabaltazar.working@gmail.com'); this.innerHTML='COPIED'; setTimeout(()=&gt;this.innerHTML='COPY', 2000);">
+                                    COPY
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Secure Channels & Networks -->
+                    <div class="bg-surface-container p-space-lg space-y-space-sm shadow-xl">
+                        <span
+                            class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest block">
+                            Social Media
+                        </span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+                            <a class="p-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col items-start gap-1"
+                                href="https://linkedin.com/in/sofia-baltazar-working/" rel="noreferrer" target="_blank">
+                                <span
+                                    class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase">LINKEDIN</span>
+                                <span
+                                    class="font-code-md text-code-md text-on-surface hover:text-secondary truncate w-full">/in/sofia-baltazar-working</span>
+                            </a>
+                            <a class="p-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col items-start gap-1"
+                                href="https://github.com/sofiabaltazar" rel="noreferrer" target="_blank">
+                                <span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase">LAB
+                                    REPO</span>
+                                <span
+                                    class="font-code-md text-code-md text-on-surface hover:text-secondary truncate w-full">@sofiabaltazar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3: FQA-->
+
+
+        <section>
+            <div id="footer"></div>
+
+            <script>
+                fetch("./component/footer.html")
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("footer").innerHTML = html;
+                    });
+            </script>
+        </section>
+    </main>
+
+</body>
+
+</html>
