@@ -1,0 +1,447 @@
+<section class="relative bg-primary-navy py-20 px-4 sm:px-6 lg:px-8 border-b border-navy-border overflow-hidden"
+    id="showcase">
+    <!-- Dynamic Ambient Glow Backdrops -->
+    <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+    </div>
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[450px] bg-gold-accent/10 rounded-full blur-[140px] pointer-events-none animate-aura">
+    </div>
+    <div class="absolute -top-12 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none">
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <div
+            class="inline-flex items-center gap-2 bg-deep-navy/90 backdrop-blur-sm border border-gold-accent/40 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-gold-accent mb-4">
+            <span class="text-gold-accent animate-pulse">✦</span>
+            <span class="">IMMERSIVE EXPERIENCES</span>
+        </div>
+        <h2 class="font-impact text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-white leading-tight mb-4">
+            INTERFACE HARMONY &amp; MOTION
+        </h2>
+        <p class="text-xs sm:text-sm text-brand-silver max-w-xl mx-auto mb-10 leading-relaxed">
+            Crafting dynamic visual narratives that merge tactile exploration, seamless interaction, and robust
+            technical execution.
+        </p>
+        <!-- Carousel Container Card -->
+        <div
+            class="w-full max-w-5xl bg-navy-card/85 border border-navy-border hover:border-gold-accent/50 rounded-2xl sm:rounded-3xl p-4 sm:p-7 md:p-9 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 relative group/showcase">
+            <!-- Sub-header bar inside showcase with live state indicators -->
+            <div
+                class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-navy-border text-left">
+                <div class="flex items-center gap-2.5">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-gold-accent animate-ping"></span>
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-white">CAPSULE ENGINE
+                        v2.4</span>
+                    <span class="text-brand-silver/30 text-xs">|</span>
+                    <span class="text-[11px] font-mono text-brand-silver/80 uppercase">Tactile Motion
+                        Controller</span>
+                </div>
+                <!-- Navigation Controls -->
+                <div class="flex items-center gap-2">
+                    <button aria-label="Previous capsule"
+                        class="w-8 h-8 rounded-full bg-deep-navy border border-navy-border hover:border-gold-accent hover:text-gold-accent text-brand-silver flex items-center justify-center transition-all hover:scale-105 active:scale-95 text-xs font-bold"
+                        id="carousel-prev">
+                        ←
+                    </button>
+                    <div
+                        class="flex items-center gap-1.5 px-3 py-1 bg-deep-navy/80 rounded-full border border-navy-border text-[11px] font-mono text-gold-accent">
+                        <span id="capsule-active-index">03</span>
+                        <span class="text-brand-silver/40">/</span>
+                        <span class="text-brand-silver/60">05</span>
+                    </div>
+                    <button aria-label="Next capsule"
+                        class="w-8 h-8 rounded-full bg-deep-navy border border-navy-border hover:border-gold-accent hover:text-gold-accent text-brand-silver flex items-center justify-center transition-all hover:scale-105 active:scale-95 text-xs font-bold"
+                        id="carousel-next">
+                        →
+                    </button>
+                    <button aria-label="Pause or play carousel autoplay"
+                        class="hidden sm:inline-flex items-center gap-1.5 ml-2 px-3 py-1 rounded-full border border-navy-border bg-white/5 hover:border-gold-accent text-[10px] font-mono uppercase tracking-wider text-brand-silver hover:text-gold-accent transition-colors"
+                        id="carousel-autoplay-toggle">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block"
+                            id="autoplay-indicator"></span>
+                        <span id="autoplay-text">Auto</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Interactive 5-Capsule Multi-State Canvas -->
+            <div
+                class="relative w-full rounded-2xl bg-[#070b16] p-4 sm:p-6 md:p-8 flex items-center justify-center overflow-hidden border border-navy-border/70 shadow-inner min-h-[380px] sm:min-h-[440px] md:min-h-[480px]">
+                <!-- Background decorative grid / ambient lines -->
+                <div
+                    class="absolute inset-0 opacity-15 bg-[radial-gradient(#C9A24D_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none">
+                </div>
+                <!-- Capsules Flex Row -->
+                <div class="relative z-10 flex items-center justify-center gap-2.5 sm:gap-4 md:gap-5 w-full h-[320px] sm:h-[380px] md:h-[410px] max-w-4xl mx-auto"
+                    id="capsules-wrapper">
+                    <!-- Capsule 1: High Alpine Peak -->
+                    <div class="capsule-card cursor-pointer group/pill relative rounded-full h-[260px] sm:h-[310px] md:h-[340px] w-14 sm:w-16 md:w-20 overflow-hidden border-2 border-navy-border hover:border-gold-accent/70 transition-all duration-500 ease-out shadow-lg shrink-0 flex flex-col justify-end p-2.5"
+                        data-index="0">
+                        <img alt="Alpine Trail"
+                            class="absolute inset-0 w-full h-full object-cover group-hover/pill:scale-110 transition-transform duration-700 brightness-90"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC3r5m2obgYm2H8ySiBMuxfhoFE_Udh-kOgTJzNBoVfH_NK9z4QOawXx96zjZVDzWXYjWbpPRfBSbL_hHP9PDwBRVgK7WxfCrdQYI-JdV3mimrEUTAPcox6QWjkZQld9jhvVcYYyPzzN4DsuaXGist6DBQAEqpj_Y4qiVx10oCYJ7C-r2M-o0hXgmbFQnJVjUrBeQldnEDQbx4MOHqheZZQyigi4aKqz2ufOtu8GGWZnLHbRsILwaW">
+                        <div
+                            class="capsule-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                        </div>
+                        <!-- Expanded Meta Content -->
+                        <div
+                            class="capsule-content relative z-10 hidden flex-col justify-end text-left p-2 sm:p-4 mb-2">
+                            <span
+                                class="text-[10px] font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">01
+                                // WILDERNESS</span>
+                            <h3 class="font-impact text-xl sm:text-2xl text-white tracking-wide leading-none">
+                                ALPINE
+                                TRAIL</h3>
+                            <p class="text-xs text-brand-silver font-medium mt-1 max-w-sm">Rugged mountain
+                                ridges
+                                &amp; tactile elevation paths</p>
+                        </div>
+                        <!-- Bottom Icon Badge -->
+                        <div
+                            class="relative z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-md shrink-0 mx-auto transition-transform duration-300 group-hover/pill:scale-110">
+                            <span class="text-base sm:text-lg">🥾</span>
+                        </div>
+                    </div>
+                    <!-- Capsule 2: Winter Frost Sanctuary -->
+                    <div class="capsule-card cursor-pointer group/pill relative rounded-full h-[260px] sm:h-[310px] md:h-[340px] w-14 sm:w-16 md:w-20 overflow-hidden border-2 border-navy-border hover:border-gold-accent/70 transition-all duration-500 ease-out shadow-lg shrink-0 flex flex-col justify-end p-2.5"
+                        data-index="1">
+                        <img alt="Winter Retreat"
+                            class="absolute inset-0 w-full h-full object-cover group-hover/pill:scale-110 transition-transform duration-700 brightness-90"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_JewR660if8SHSa8WlARU_FW5-OChpXeDPjsfuuOV-SzxW99UWlKWaGQoU5MnBh8iSNol5wN3Oa2AxwTgtsTu50um2AopRptD_vmU9rT5R_OALjHmNvsc-hZma_0x_fgxMxV0tM_UXhCBEAs-hMLBZ_8Tfcmee-Q0SMiQZCdjLF-o4YKKhcbGMmbA0-2MySZO8b7tDUzB3_xTp2IFOmIEplfQoDOQpwPUdkDLBSYmAcK8YTlSLk_">
+                        <div
+                            class="capsule-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                        </div>
+                        <!-- Expanded Meta Content -->
+                        <div
+                            class="capsule-content relative z-10 hidden flex-col justify-end text-left p-2 sm:p-4 mb-2">
+                            <span
+                                class="text-[10px] font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">02
+                                // CLIMATE</span>
+                            <h3 class="font-impact text-xl sm:text-2xl text-white tracking-wide leading-none">
+                                FROST
+                                HAVEN</h3>
+                            <p class="text-xs text-brand-silver font-medium mt-1 max-w-sm">Sub-zero mist
+                                architectures &amp; pure ambient quietude</p>
+                        </div>
+                        <!-- Bottom Icon Badge -->
+                        <div
+                            class="relative z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-md shrink-0 mx-auto transition-transform duration-300 group-hover/pill:scale-110">
+                            <span class="text-base sm:text-lg text-rose-500">❄️</span>
+                        </div>
+                    </div>
+                    <!-- Capsule 3: Sunlit Forest Sanctuary (INITIAL ACTIVE EXPANDED CARD) -->
+                    <div class="capsule-card cursor-pointer group/pill relative rounded-3xl h-[290px] sm:h-[350px] md:h-[390px] w-[260px] sm:w-[360px] md:w-[460px] overflow-hidden border-2 border-gold-accent transition-all duration-500 ease-out shadow-[0_15px_35px_rgba(201,162,77,0.25)] shrink-0 flex flex-col justify-end p-4 sm:p-6 ring-2 ring-gold-accent/40"
+                        data-index="2">
+                        <img alt="Timber Sanctuary"
+                            class="absolute inset-0 w-full h-full object-cover group-hover/pill:scale-105 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoV7tiulQZYVOhUYGNEo5YkE8RdguotqrO_yxzdOuOBzfI2_wYBuquydHJN7aeIhJL5MW2LhKuOmNn6HCCHrNLuVtY6OtX1xhqvhYA88Kp13DNEflYCJsIA8oAfmQ2fihBcEgEznPS2Fd2CDDYzxLQ6ZTXWK7Hjm-1SaUDFnux2E-FZEpWhNdHJ8FgHeCHsoqa761CDKNlMsKucN0MHVl144NfDsiZopI1IyGogezUcr9iA1qUlWXH">
+                        <div
+                            class="capsule-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent">
+                        </div>
+                        <!-- Expanded Meta Content -->
+                        <div class="capsule-content relative z-10 flex flex-col justify-end text-left mb-1">
+                            <span
+                                class="text-[10px] sm:text-xs font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">03
+                                // SHELTER · ACTIVE FOCUS</span>
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-lg shrink-0">
+                                    <span class="text-xl">🌲</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-impact text-xl sm:text-3xl text-white tracking-wide leading-none">
+                                        TIMBER SANCTUARY</h3>
+                                    <p class="text-xs sm:text-sm text-brand-silver font-medium mt-1">Sunlit
+                                        woodland
+                                        cabin · Deep pine atmosphere</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pill icon hidden when expanded -->
+                        <div
+                            class="relative z-10 w-10 h-10 rounded-full bg-white/95 text-deep-navy hidden items-center justify-center shadow-md shrink-0 mx-auto">
+                            <span class="text-lg">🌲</span>
+                        </div>
+                    </div>
+                    <!-- Capsule 4: Coastal Waters -->
+                    <div class="capsule-card cursor-pointer group/pill relative rounded-full h-[260px] sm:h-[310px] md:h-[340px] w-14 sm:w-16 md:w-20 overflow-hidden border-2 border-navy-border hover:border-gold-accent/70 transition-all duration-500 ease-out shadow-lg shrink-0 flex flex-col justify-end p-2.5"
+                        data-index="3">
+                        <img alt="Coastline Oasis"
+                            class="absolute inset-0 w-full h-full object-cover group-hover/pill:scale-110 transition-transform duration-700 brightness-90"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC85X1g7qQMwkxUhtRiyOLWdYCc_dH1xaljg93uz5tKEK6omllBjSwXpQNL2PsQr0dQYyqiIoRzo3kfnTX_cOG5Vhnv0zcp-R7aNn0vLXH8sJFlOWDhMglEgm9phjpaKrB5CJm5eScQPFESEDdvldkbyyVrWf6WogbgJV9vWNKN3Wi-okDxA-FNVsxh8Jp76f035SRlXhuYfiZRCe-Rjfcs1JfuxuPbIXRJNG69JlqgaCQgVQybnBwp">
+                        <div
+                            class="capsule-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                        </div>
+                        <!-- Expanded Meta Content -->
+                        <div
+                            class="capsule-content relative z-10 hidden flex-col justify-end text-left p-2 sm:p-4 mb-2">
+                            <span
+                                class="text-[10px] font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">04
+                                // HYDRATION</span>
+                            <h3 class="font-impact text-xl sm:text-2xl text-white tracking-wide leading-none">
+                                COASTLINE OASIS</h3>
+                            <p class="text-xs text-brand-silver font-medium mt-1 max-w-sm">Tidal reflections,
+                                blue
+                                gradients, &amp; pure calm flow</p>
+                        </div>
+                        <!-- Bottom Icon Badge -->
+                        <div
+                            class="relative z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-md shrink-0 mx-auto transition-transform duration-300 group-hover/pill:scale-110">
+                            <span class="text-base sm:text-lg text-emerald-600">💧</span>
+                        </div>
+                    </div>
+                    <!-- Capsule 5: Solar Desert Canyon -->
+                    <div class="capsule-card cursor-pointer group/pill relative rounded-full h-[260px] sm:h-[310px] md:h-[340px] w-14 sm:w-16 md:w-20 overflow-hidden border-2 border-navy-border hover:border-gold-accent/70 transition-all duration-500 ease-out shadow-lg shrink-0 flex flex-col justify-end p-2.5"
+                        data-index="4">
+                        <img alt="Solar Valley"
+                            class="absolute inset-0 w-full h-full object-cover group-hover/pill:scale-110 transition-transform duration-700 brightness-90"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfFHkl22Zf5QTrwpYtOwlxezEWkvc2odQLxbSSzgSt9-p5UKSuTC84t4gnKiSMaZ31F1mLO0WHrSTg9cHS4VkIBETkxHw5v6_UdAX4kyDPiu5HKDVrjsTv1t762P-LJiPvI71fgm7ijeGbBNlc5Vb5qES6ihhKW8h5WWIHGi1a80hANQX9Peo7y0VeBdQ1zb51_kXZ98YrgAqxWljoeEh9eOrWQFvmmOotlbfz1EjNjnK1tcW7cCXV">
+                        <div
+                            class="capsule-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                        </div>
+                        <!-- Expanded Meta Content -->
+                        <div
+                            class="capsule-content relative z-10 hidden flex-col justify-end text-left p-2 sm:p-4 mb-2">
+                            <span
+                                class="text-[10px] font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">05
+                                // LUMINESCENCE</span>
+                            <h3 class="font-impact text-xl sm:text-2xl text-white tracking-wide leading-none">
+                                SOLAR
+                                CANYON</h3>
+                            <p class="text-xs text-brand-silver font-medium mt-1 max-w-sm">Golden hour earth
+                                tones
+                                &amp; expansive high-contrast horizon</p>
+                        </div>
+                        <!-- Bottom Icon Badge -->
+                        <div
+                            class="relative z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-md shrink-0 mx-auto transition-transform duration-300 group-hover/pill:scale-110">
+                            <span class="text-base sm:text-lg text-amber-500">☀️</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating ambient badges in the interactive frame -->
+                <div
+                    class="absolute top-4 left-5 bg-deep-navy/80 border border-navy-border/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono text-brand-silver hidden sm:flex items-center gap-2 pointer-events-none">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-accent"></span>
+                    <span>Click any capsule to expand</span>
+                </div>
+            </div>
+            <!-- Bottom Interactive Footbar -->
+            <div
+                class="flex flex-wrap items-center justify-between gap-4 mt-6 pt-5 border-t border-navy-border text-left">
+                <div class="flex items-center gap-3">
+                    <span class="text-gold-accent text-xs font-mono font-bold uppercase tracking-wider">✦
+                        CAPSULE
+                        ENGINE</span>
+                    <span class="text-brand-silver/40 text-xs hidden sm:inline">|</span>
+                    <span class="text-brand-silver text-xs font-medium hidden sm:inline">Multi-state ambient
+                        transitions &amp; responsive curation</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-1.5">
+                        <button aria-label="Go to slide 1"
+                            class="capsule-dot w-2.5 h-2.5 rounded-full bg-brand-silver/30 hover:bg-gold-accent transition-colors"
+                            data-dot="0"></button>
+                        <button aria-label="Go to slide 2"
+                            class="capsule-dot w-2.5 h-2.5 rounded-full bg-brand-silver/30 hover:bg-gold-accent transition-colors"
+                            data-dot="1"></button>
+                        <button aria-label="Go to slide 3"
+                            class="capsule-dot w-6 h-2.5 rounded-full bg-gold-accent transition-all"
+                            data-dot="2"></button>
+                        <button aria-label="Go to slide 4"
+                            class="capsule-dot w-2.5 h-2.5 rounded-full bg-brand-silver/30 hover:bg-gold-accent transition-colors"
+                            data-dot="3"></button>
+                        <button aria-label="Go to slide 5"
+                            class="capsule-dot w-2.5 h-2.5 rounded-full bg-brand-silver/30 hover:bg-gold-accent transition-colors"
+                            data-dot="4"></button>
+                    </div>
+                    <a class="inline-flex items-center gap-1.5 text-xs font-mono uppercase font-bold text-gold-accent hover:text-white transition-colors ml-2"
+                        href="#services">
+                        <span>Interactive Modules</span>
+                        <span class="text-sm">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Capsule Slider Interactive Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.capsule-card');
+        const dots = document.querySelectorAll('.capsule-dot');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const indexDisplay = document.getElementById('capsule-active-index');
+        const autoplayToggle = document.getElementById('carousel-autoplay-toggle');
+        const autoplayIndicator = document.getElementById('autoplay-indicator');
+        const autoplayText = document.getElementById('autoplay-text');
+
+        let currentIndex = 2;
+        let isAutoplay = true;
+        let autoplayInterval = null;
+
+        const dataConfigs = [
+            {
+                tag: "01 // WILDERNESS",
+                title: "ALPINE TRAIL",
+                desc: "Rugged mountain ridges & tactile elevation paths",
+                icon: "🥾"
+            },
+            {
+                tag: "02 // CLIMATE",
+                title: "FROST HAVEN",
+                desc: "Sub-zero mist architectures & pure ambient quietude",
+                icon: "❄️"
+            },
+            {
+                tag: "03 // SHELTER · ACTIVE FOCUS",
+                title: "TIMBER SANCTUARY",
+                desc: "Sunlit woodland cabin · Deep pine atmosphere",
+                icon: "🌲"
+            },
+            {
+                tag: "04 // HYDRATION",
+                title: "COASTLINE OASIS",
+                desc: "Tidal reflections, blue gradients, & pure calm flow",
+                icon: "💧"
+            },
+            {
+                tag: "05 // LUMINESCENCE",
+                title: "SOLAR CANYON",
+                desc: "Golden hour earth tones & expansive high-contrast horizon",
+                icon: "☀️"
+            }
+        ];
+
+        function setActiveCapsule(newIndex) {
+            currentIndex = (newIndex + cards.length) % cards.length;
+            if (indexDisplay) {
+                indexDisplay.textContent = `0${currentIndex + 1}`;
+            }
+
+            cards.forEach((card, idx) => {
+                const content = card.querySelector('.capsule-content');
+                const standaloneIcon = card.querySelector('.group\\/pill > div.mx-auto');
+
+                if (idx === currentIndex) {
+                    // Expand active card
+                    card.className = "capsule-card cursor-pointer group/pill relative rounded-3xl h-[290px] sm:h-[350px] md:h-[390px] w-[260px] sm:w-[360px] md:w-[460px] overflow-hidden border-2 border-gold-accent transition-all duration-500 ease-out shadow-[0_15px_35px_rgba(201,162,77,0.25)] shrink-0 flex flex-col justify-end p-4 sm:p-6 ring-2 ring-gold-accent/40";
+                    if (content) {
+                        content.classList.remove('hidden');
+                        content.classList.add('flex');
+                        content.innerHTML = `
+              <span class="text-[10px] sm:text-xs font-mono text-gold-accent uppercase font-bold tracking-widest mb-1">${dataConfigs[idx].tag}</span>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-white/95 text-deep-navy flex items-center justify-center shadow-lg shrink-0">
+                  <span class="text-xl">${dataConfigs[idx].icon}</span>
+                </div>
+                <div>
+                  <h3 class="font-impact text-xl sm:text-3xl text-white tracking-wide leading-none">${dataConfigs[idx].title}</h3>
+                  <p class="text-xs sm:text-sm text-brand-silver font-medium mt-1">${dataConfigs[idx].desc}</p>
+                </div>
+              </div>
+            `;
+                    }
+                    if (standaloneIcon) standaloneIcon.classList.add('hidden');
+                } else {
+                    // Collapse other pills
+                    card.className = "capsule-card cursor-pointer group/pill relative rounded-full h-[260px] sm:h-[310px] md:h-[340px] w-14 sm:w-16 md:w-20 overflow-hidden border-2 border-navy-border hover:border-gold-accent/70 transition-all duration-500 ease-out shadow-lg shrink-0 flex flex-col justify-end p-2.5";
+                    if (content) {
+                        content.classList.add('hidden');
+                        content.classList.remove('flex');
+                    }
+                    if (standaloneIcon) standaloneIcon.classList.remove('hidden');
+                }
+            });
+
+            // Update dots
+            dots.forEach((dot, idx) => {
+                if (idx === currentIndex) {
+                    dot.className = "capsule-dot w-6 h-2.5 rounded-full bg-gold-accent transition-all";
+                } else {
+                    dot.className = "capsule-dot w-2.5 h-2.5 rounded-full bg-brand-silver/30 hover:bg-gold-accent transition-colors";
+                }
+            });
+        }
+
+        // Card click event
+        cards.forEach((card, idx) => {
+            card.addEventListener('click', () => {
+                setActiveCapsule(idx);
+                restartAutoplay();
+            });
+        });
+
+        // Dot click event
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                setActiveCapsule(idx);
+                restartAutoplay();
+            });
+        });
+
+        // Arrow navigation
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                setActiveCapsule(currentIndex - 1);
+                restartAutoplay();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                setActiveCapsule(currentIndex + 1);
+                restartAutoplay();
+            });
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayInterval = setInterval(() => {
+                setActiveCapsule(currentIndex + 1);
+            }, 4200);
+        }
+
+        function stopAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+        }
+
+        function restartAutoplay() {
+            if (isAutoplay) {
+                startAutoplay();
+            }
+        }
+
+        if (autoplayToggle) {
+            autoplayToggle.addEventListener('click', () => {
+                isAutoplay = !isAutoplay;
+                if (isAutoplay) {
+                    autoplayIndicator.className = "w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block";
+                    autoplayText.textContent = "Auto";
+                    startAutoplay();
+                } else {
+                    autoplayIndicator.className = "w-1.5 h-1.5 rounded-full bg-zinc-500 inline-block";
+                    autoplayText.textContent = "Paused";
+                    stopAutoplay();
+                }
+            });
+        }
+
+        // Pause on hover over showcase
+        const showcaseCard = document.querySelector('.group\\/showcase');
+        if (showcaseCard) {
+            showcaseCard.addEventListener('mouseenter', () => {
+                if (isAutoplay) stopAutoplay();
+            });
+            showcaseCard.addEventListener('mouseleave', () => {
+                if (isAutoplay) startAutoplay();
+            });
+        }
+
+        // Start initial autoplay cycle
+        startAutoplay();
+    });
+</script>
