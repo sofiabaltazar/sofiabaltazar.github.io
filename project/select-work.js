@@ -16,7 +16,7 @@ const projects = [
 
   {
     title: "SAAS CRM APPOINTMENT FUNNEL",
-    category: "Website & Funnel Solutions",
+    category: "Business Systems & Operations",
     image: "../assets/image/project/SaaS-crm.jpg",
     alt: "SaaS CRM appointment funnel",
     description:
