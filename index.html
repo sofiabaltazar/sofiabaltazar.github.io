@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Syne:wght@700;800&amp;display=swap"
         rel="stylesheet">
@@ -270,6 +272,142 @@
         </script>
     </section>
     <main>
+        <!-- Mobile -->
+        <section>
+            <!-- Mobile Drawer -->
+            <div id="drawer-navigation"
+                class="fixed top-0 left-0 z-50 w-72 h-screen p-6 overflow-y-auto transition-transform -translate-x-full bg-primary-navy border-e border-outline-variant"
+                tabindex="-1" aria-labelledby="drawer-navigation-label">
+
+
+                <!-- Drawer Header -->
+                <div class="flex items-start justify-between pb-6 border-b border-outline-variant/60">
+
+                    <a href="/index.html" class="flex items-center gap-3 text-white">
+
+                        <div class="size-7 text-primary">
+
+                            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+
+                                <path clip-rule="evenodd"
+                                    d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                    fill="currentColor" fill-rule="evenodd">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+                            <span class="block text-sm font-bold tracking-wide">
+                                SOFIA BALTAZAR
+                            </span>
+
+                            <span class="block text-[8px] font-mono uppercase tracking-wider text-outline">
+                                Creative Technologist · Systems Designer · Digital Architect
+                            </span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Close Button -->
+                    <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                        aria-label="Close navigation menu"
+                        class="text-outline hover:text-gold-accent transition-colors">
+
+                        <i class="fa-solid fa-xmark text-xl"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Mobile Navigation -->
+                <nav class="py-8">
+
+                    <div class="space-y-2">
+
+                        <a href="/index.html" data-drawer-hide="drawer-navigation"
+                            class="flex items-center gap-4 px-3 py-3 text-sm font-semibold uppercase tracking-wider text-brand-light-gray rounded hover:bg-white/5 hover:text-gold-accent transition-colors">
+                            <span>Home</span>
+                        </a>
+
+
+                        <a href="/about.html" data-drawer-hide="drawer-navigation"
+                            class="flex items-center gap-4 px-3 py-3 text-sm font-semibold uppercase tracking-wider text-brand-light-gray rounded hover:bg-white/5 hover:text-gold-accent transition-colors">
+                            <span>About</span>
+                        </a>
+
+
+                        <a href="/contact.html" data-drawer-hide="drawer-navigation"
+                            class="flex items-center gap-4 px-3 py-3 text-sm font-semibold uppercase tracking-wider text-brand-light-gray rounded hover:bg-white/5 hover:text-gold-accent transition-colors">
+                            <span>Contact</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Mobile CTA -->
+                    <div class="mt-8 pt-6 border-t border-outline-variant/60">
+
+                        <p class="mb-3 text-[10px] font-mono uppercase tracking-widest text-outline">
+                            Available for engagements
+                        </p>
+
+                        <a href="https://meetings-na2.hubspot.com/sbaltazar"
+                            class="flex items-center justify-center gap-2 w-full px-5 py-3 btn-primary text-xs font-bold font-mono uppercase tracking-wider rounded transition-colors shadow-sm">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            <span>Book A Free Call</span>
+
+                        </a>
+
+                    </div>
+
+                </nav>
+
+
+                <!-- Mobile Social Links -->
+                <div class="absolute bottom-6 left-6 right-6 pt-5 border-t border-outline-variant/60">
+
+                    <div class="flex items-center gap-5 text-outline">
+
+                        <a href="https://www.linkedin.com/in/sofia-baltazar-working/" aria-label="LinkedIn"
+                            target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/sofiabaltazar.working/" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="https://www.facebook.com/sofiabaltazar.working/" aria-label="Facebook" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">
+
+                            <i class="fa-brands fa-facebook"></i>
+
+                        </a>
+
+                        <a href="https://linktr.ee/sofiabaltazar.working" aria-label="Linktree" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
         <!-- ==================== Hero ==================== -->
         <section
             class="relative pt-12 pb-24 px-4 md:px-8 lg:px-12 bg-primary-navy border-b border-outline-variant/60 overflow-hidden">
@@ -1099,6 +1237,7 @@
     </main>
 
     <script src="./assets/js/year.js"></script>
+    <script src="./assets/js/navbar.js"></script>
     <script src="./project/select-work.js"></script>
 
 </body>
