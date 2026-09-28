@@ -798,7 +798,7 @@
             </div>
         </section>
         <!-- ==================== Project ==================== -->
-        <!-- <section class="bg-dark-blue py-20 px-4 sm:px-6 lg:px-8 border-b border-navy-border" id="selected-work">
+        <section class="bg-dark-blue py-20 px-4 sm:px-6 lg:px-8 border-b border-navy-border" id="selected-work">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
                     <div>
@@ -816,18 +816,11 @@
                     </div>
                 </div>
                 <section>
-                    <div id="select-work"></div>
-
-                    <script>
-                        fetch("./project/select-work.html")
-                            .then(res => res.text())
-                            .then(html => {
-                                document.getElementById("select-work").innerHTML = html;
-                            });
-                    </script>
+                    <!-- Projects Showcase Grid -->
+                    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
                 </section>
             </div>
-        </section> -->
+        </section>
         <!-- ==================== TICKER / MARQUEE ==================== -->
         <section class="bg-gold-accent py-3.5 border-y border-gold-accent/30 overflow-hidden select-none">
             <div
@@ -860,6 +853,7 @@
     </main>
 
     <script src="./assets/js/year.js"></script>
+    <script src="./project/select-work.js"></script>
 </body>
 
 </html>
